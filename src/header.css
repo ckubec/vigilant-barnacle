@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+
+a {
+    border-radius: 8px;
+    border: 3px solid midnightblue;
+}
+
+a.nav-link:hover {
+    animation: border-flicker 2s linear forwards, letter-flicker 3s linear infinite;
+}
+
+@keyframes letter-flicker {
+    2%, 6%, 11%, 18%, 32%, 37%, 40%, 100% {
+        color: orangered;
+        text-shadow: 0 0 50px orangered;
+    }
+    3%, 9%, 14%, 33%, 39% {
+        color: darkred;
+        text-shadow: none;
+    }
+}
+
+@keyframes border-flicker {
+    2%, 5%, 7%, 13%, 18%, 34%, 54%, 100% {
+        border: 3px solid cornflowerblue;
+        box-shadow: 0 0 50px -1px cornflowerblue,
+        0 0 12px -1px cornflowerblue inset;
+    }
+    3%, 6%, 9%, 16%, 22%, 36% {
+        border: 3px solid midnightblue;
+        box-shadow: none;
+    }
+}
