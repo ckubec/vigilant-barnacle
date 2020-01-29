@@ -22,7 +22,8 @@ export class Header extends React.Component {
     render() {
         const styling = {
             color: '#3739ff',
-            borderBottom: "3px solid black"
+            borderBottom: "3px solid black",
+            background: "black"
         };
         const brand = "Chris Kubec";
         tabs.shift();
@@ -41,7 +42,7 @@ export class Header extends React.Component {
 
         return (
             <>
-                <BannerCanvas />
+                <BannerCanvas width={window.innerWidth} height={window.innerHeight*.6} />
 
                 <Navbar collapseOnSelect style={styling} sticky="top" expand="lg"  >
                     <NavbarBrand style={titlestyle}><Nav.Link style={buttonstyle}>{brand.toUpperCase()}</Nav.Link></NavbarBrand>
