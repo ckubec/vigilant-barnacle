@@ -1,4 +1,7 @@
 import React, {useState} from 'react';
+import Konva from 'konva';
+import {Shape, Stage, Layer, RegularPolygon} from 'react-konva';
+
 
 
 interface HexState {
@@ -28,7 +31,7 @@ export class BannerCanvas extends React.Component<HexState> {
     }
 
     getHeight(){
-        return this.state;
+        return window.innerWidth;
     }
 
     componentDidMount(): void {
@@ -40,38 +43,68 @@ export class BannerCanvas extends React.Component<HexState> {
         let canvas = this.canvasRef;
         let ctx: CanvasRenderingContext2D | null = canvas.current ? canvas.current.getContext('2d') : null;
 
+        //ctx?.scale(3,3);
 
         let hexdens = 50;
-        let size = this.props.height/hexdens;
+        let size = 100;
         let x =0;
         let y =0;
         let offset = 3/2 * size;
         let offsety = Math.sqrt(3)*size;
 
 
+        //let temp = new Hexagon(15, 5, size, offset, "black");
+        //let hex = [];
+        //temp.draw(ctx);
         for(let z=0; z<this.props.height/hexdens; z++) {
             for (let i = 0; i < hexdens-2; i++) {
-                let temp;
+                /*let temp;
                 if (i % 2 === 0) {
                     temp = new Hexagon((x + (offset)) * i, y+(offsety*z), size, offset, "black");
                 } else
-                    temp = new Hexagon((x + (offset)) * i, (offsety*z)-(offsety / 2), size, offset, "black");
+                    temp = new Hexagon((x + (offset)) * i, (offsety*z)-(offsety / 2), size, offset, "black");*/
+                //hex.push(<RegularPolygon sides={6} radius={70} x={200} y={150} fill={"black"} stroke={"white"}></RegularPolygon>);
 
-                temp.draw(ctx);
+                //temp.draw(ctx);
             }
         }
     }
 
     render() {
         const canvasstyle = {
-            backgroundColor: "white",
-            width: "100%",
-            height: "200px",
-            display: "block"
+            backgroundColor: "black",
+            width: window.outerWidth,
+            height: window.innerHeight/2,
+            display: "flex"
         };
+        let hextest = new Hexagon(0,0,50,50,"blue");
+        hextest.draw();
+        let size = 50;
+        let x =0;
+        let y =0;
+        let offset = 3/2 * size;
+        let offsety = Math.sqrt(3)*size;
+        let hex = [];
+        let width = 1860/(size*2);
+
+        console.log("The Height ", width, " Actual ", this.getHeight());
+        for(let z=0; z<8; z++) {
+            for (let i = 0; i <= 25; i++) {
+                if (z% 2 === 0) {
+                    hex.push(<RegularPolygon sides={6} radius={size} x={offsety*i} y={0+ offset*z} fill={"black"} stroke={"white"}></RegularPolygon>);
+                } else {
+                    hex.push(<RegularPolygon sides={6} radius={size} x={offsety*i-offsety/2} y={0+ offset*z} fill={"black"} stroke={"white"}></RegularPolygon>);
+                }
+
+            }
+        }
 
         return (
-            <canvas ref={this.canvasRef} style={canvasstyle} />
+            <Stage width={window.innerWidth} height={400} style={canvasstyle} >
+                <Layer>
+                    {hex}
+                </Layer>
+            </Stage>
         );
     };
 }
@@ -91,26 +124,17 @@ class Hexagon {
         this.color = color;
     }
 
-    draw(ctx:any) {
-        ctx.beginPath();
-        //ctx.moveTo(this.x + this.size * Math.cos(0), this.y + this.size * Math.sin(0));
-        ctx.fillStyle = this.color;
-        ctx.fill();
-        ctx.lineWidth = 2;
-        ctx.strokeStyle = "white";
-
-        let sides = 6;
-        //console.log(this);
-        for (let i=0; i<=sides; i++) {
-            this.x = this.x + this.size * Math.cos(i*2*Math.PI/sides);
-            this.y = this.y + this.size * Math.sin(i *2 * Math.PI/sides);
-            ctx.lineTo(this.x, this.y);
-            ctx.stroke();
-
-            //console.log(this);
-        }
-        ctx.closePath();
-
-        ctx.fill();
+    draw() {
+        var hexagon = new Konva.RegularPolygon({
+            x: 100,
+            y: 150,
+            sides: 6,
+            radius: 75,
+            fill: 'white',
+            stroke: "white",
+            strokeWidth: 1
+        })
+        console.log(hexagon.getHeight(), " ", hexagon.getWidth());
+        return <RegularPolygon sides={6} radius={70} x={100} y={150} fill={"white"} stroke={"white"}></RegularPolygon>;
     }
 }

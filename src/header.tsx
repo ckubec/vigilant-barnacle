@@ -40,9 +40,16 @@ export class Header extends React.Component {
             fontSize: "20px",
         };
 
+        const banner = {
+            height: 400,
+            width: 400
+        }
+
         return (
             <>
-                <BannerCanvas width={window.innerWidth} height={window.innerHeight*.6} />
+                <div style={banner}>
+                    <BannerCanvas width={window.innerWidth} height={window.innerHeight}/>
+                </div>
 
                 <Navbar collapseOnSelect style={styling} sticky="top" expand="lg"  >
                     <NavbarBrand style={titlestyle}><Nav.Link style={buttonstyle}>{brand.toUpperCase()}</Nav.Link></NavbarBrand>
