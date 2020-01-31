@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1a9c9f9f53e5b81985df431d0e7aca56",
+    "revision": "5a2e91ca3fd84fddcfa78a234b44f1e2",
     "url": "/vigilant-barnacle/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vigilant-barnacle/static/css/2.64a99b10.chunk.css"
   },
   {
-    "revision": "34701d71607ff75ecb15",
+    "revision": "ab634a3fa4f47f7561d8",
     "url": "/vigilant-barnacle/static/css/main.a4b07949.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vigilant-barnacle/static/js/2.52f2f105.chunk.js.LICENSE"
   },
   {
-    "revision": "34701d71607ff75ecb15",
-    "url": "/vigilant-barnacle/static/js/main.305a5688.chunk.js"
+    "revision": "ab634a3fa4f47f7561d8",
+    "url": "/vigilant-barnacle/static/js/main.5aff2f31.chunk.js"
   },
   {
     "revision": "80f7ef15338568712f6c",
