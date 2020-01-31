@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/vigilant-barnacle/precache-manifest.d1946594c6e903a11b42e2f365e5d507.js"
+  "/vigilant-barnacle/precache-manifest.a4c2ba3151d9d924cd40d4532ab75cbe.js"
 );
 
 self.addEventListener('message', (event) => {
