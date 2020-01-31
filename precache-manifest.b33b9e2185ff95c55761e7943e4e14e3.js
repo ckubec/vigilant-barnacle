@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "71cb79fde8b9c97754ff8730911be85b",
+    "revision": "b90f0a4cef2bacee9fa9a4bb7f0e4f70",
     "url": "/vigilant-barnacle/index.html"
   },
   {
-    "revision": "c7b63f99448c7731c90a",
+    "revision": "56657a9e1d41430d4df3",
     "url": "/vigilant-barnacle/static/css/2.64a99b10.chunk.css"
   },
   {
-    "revision": "d1512b0c394ed00c6b88",
+    "revision": "1e10740c6b5734b43535",
     "url": "/vigilant-barnacle/static/css/main.a4b07949.chunk.css"
   },
   {
-    "revision": "c7b63f99448c7731c90a",
-    "url": "/vigilant-barnacle/static/js/2.5f0b5f52.chunk.js"
+    "revision": "56657a9e1d41430d4df3",
+    "url": "/vigilant-barnacle/static/js/2.57672665.chunk.js"
   },
   {
     "revision": "41b3e051b75f499bc371e416aecfeeb6",
-    "url": "/vigilant-barnacle/static/js/2.5f0b5f52.chunk.js.LICENSE"
+    "url": "/vigilant-barnacle/static/js/2.57672665.chunk.js.LICENSE"
   },
   {
-    "revision": "d1512b0c394ed00c6b88",
-    "url": "/vigilant-barnacle/static/js/main.f480cbfa.chunk.js"
+    "revision": "1e10740c6b5734b43535",
+    "url": "/vigilant-barnacle/static/js/main.29d9aea8.chunk.js"
   },
   {
     "revision": "80f7ef15338568712f6c",
