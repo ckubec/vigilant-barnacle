@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/vigilant-barnacle/static/css/main.a4b07949.chunk.css",
-    "main.js": "/vigilant-barnacle/static/js/main.af842a34.chunk.js",
-    "main.js.map": "/vigilant-barnacle/static/js/main.af842a34.chunk.js.map",
+    "main.js": "/vigilant-barnacle/static/js/main.9ccd0532.chunk.js",
+    "main.js.map": "/vigilant-barnacle/static/js/main.9ccd0532.chunk.js.map",
     "runtime-main.js": "/vigilant-barnacle/static/js/runtime-main.852c85ed.js",
     "runtime-main.js.map": "/vigilant-barnacle/static/js/runtime-main.852c85ed.js.map",
     "static/css/2.64a99b10.chunk.css": "/vigilant-barnacle/static/css/2.64a99b10.chunk.css",
     "static/js/2.52f2f105.chunk.js": "/vigilant-barnacle/static/js/2.52f2f105.chunk.js",
     "static/js/2.52f2f105.chunk.js.map": "/vigilant-barnacle/static/js/2.52f2f105.chunk.js.map",
     "index.html": "/vigilant-barnacle/index.html",
-    "precache-manifest.f13971603e558ca68606a4c3b808f7c5.js": "/vigilant-barnacle/precache-manifest.f13971603e558ca68606a4c3b808f7c5.js",
+    "precache-manifest.a1df64560575ba9e73000558a828e9a8.js": "/vigilant-barnacle/precache-manifest.a1df64560575ba9e73000558a828e9a8.js",
     "service-worker.js": "/vigilant-barnacle/service-worker.js",
     "static/css/2.64a99b10.chunk.css.map": "/vigilant-barnacle/static/css/2.64a99b10.chunk.css.map",
     "static/css/main.a4b07949.chunk.css.map": "/vigilant-barnacle/static/css/main.a4b07949.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.64a99b10.chunk.css",
     "static/js/2.52f2f105.chunk.js",
     "static/css/main.a4b07949.chunk.css",
-    "static/js/main.af842a34.chunk.js"
+    "static/js/main.9ccd0532.chunk.js"
   ]
 }
