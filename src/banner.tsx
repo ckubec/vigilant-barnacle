@@ -43,13 +43,11 @@ export class BannerCanvas extends React.Component {
     render() {
         const canvasstyle = {
             backgroundColor: "black",
-            width: window.outerWidth,
-            height: window.innerHeight / 2,
             display: "flex"
         };
 
         return (
-            <Stage width={window.innerWidth} height={400} style={canvasstyle}>
+            <Stage width={this.windowwidth} height={400} style={canvasstyle}>
                 <Layer>
                     {this.grid.map(grid => grid.draw())}
                 </Layer>
@@ -59,7 +57,7 @@ export class BannerCanvas extends React.Component {
 
     componentDidMount(): void {
         window.addEventListener("resize", this.handleWindowResize);
-        this.interval = setInterval(() => this.tick(), 10);
+        this.interval = setInterval(() => this.tick(), 100);
     }
 
     componentWillUnmount(): void {
@@ -100,7 +98,6 @@ class Hexagon {
     }
 
     randColor() {
-        //return "blue"
         return "rgba(" + Math.floor(Math.random()*256) + ", "+ Math.floor(Math.random()*256) + ", "+ Math.floor(Math.random()*256) + ", "+ Math.floor(Math.random()*256) + ")";
     }
 }
