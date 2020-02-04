@@ -43,12 +43,12 @@ export class Header extends React.Component {
         const banner = {
             height: 400,
             width: 400
-        }
+        };
 
         return (
             <>
                 <div style={banner}>
-                    <BannerCanvas width={window.innerWidth} height={window.innerHeight}/>
+                    <BannerCanvas />
                 </div>
 
                 <Navbar collapseOnSelect style={styling} sticky="top" expand="lg"  >
