@@ -7,7 +7,7 @@ import NavbarToggle from "react-bootstrap/NavbarToggle";
 import {BannerCanvas} from "./banner";
 
 
-let tabs = ["Chris Kubec", "About", "Projects", "Connect"];
+let tabs = ["Chris Kubec", "About", "Skills", "Projects", "Connect"];
 const buttonstyle = {
     color: "#ffffff",
     fontFamily: 'Dosis, sans-serif',
@@ -25,8 +25,7 @@ export class Header extends React.Component {
             borderBottom: "3px solid black",
             background: "black"
         };
-        const brand = "Chris Kubec";
-        tabs.shift();
+        const brand = tabs.shift();
         let items = tabs.map(tab => myNavItems(tab));
 
         const togglestyle = {
@@ -45,7 +44,7 @@ export class Header extends React.Component {
                 <BannerCanvas />
 
                 <Navbar collapseOnSelect style={styling} sticky="top" expand="lg"  >
-                    <NavbarBrand style={titlestyle}><Nav.Link style={buttonstyle}>{brand.toUpperCase()}</Nav.Link></NavbarBrand>
+                    <NavbarBrand style={titlestyle}><Nav.Link style={buttonstyle}>{brand?.toUpperCase()}</Nav.Link></NavbarBrand>
                     <NavbarToggle aria-controls="responsive-navbar-nav" style={togglestyle}/>
                     <NavbarCollapse id="responsive-navbar-nav" >
                         <Nav className="justify-content-center">{items}</Nav>
@@ -59,7 +58,7 @@ export class Header extends React.Component {
 function myNavItems(name:string) {
     return (
         <NavItem key={name} >
-            <Nav.Link style={buttonstyle} >{name.toUpperCase()}</Nav.Link>
+            <Nav.Link style={buttonstyle} href={"#"+name}>{name.toUpperCase()}</Nav.Link>
         </NavItem>
     );
 }
