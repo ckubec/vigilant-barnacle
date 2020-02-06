@@ -21,9 +21,9 @@ export class BannerCanvas extends React.Component {
         for (let z = 0; z < this.windowheight; z += offset) {
             for (let x = 0; x <= this.windowwidth + offsety; x+=offsety) {
                 if ((z/offset) % 2 === 0) {
-                    this.grid.push( new Hexagon(x, z, size, "black"));
+                    this.grid.push( new Hexagon(x*(z+1), x, z, size, "black"));
                 } else {
-                    this.grid.push( new Hexagon(x - offsety/2, z, size, "black"));
+                    this.grid.push( new Hexagon(x*(z+1), x - offsety/2, z, size, "black"));
                 }
             }
         }
@@ -47,8 +47,8 @@ export class BannerCanvas extends React.Component {
         };
 
         return (
-            <Stage width={this.windowwidth} height={400} style={canvasstyle}>
-                <Layer>
+            <Stage id="bannerstage" width={this.windowwidth} height={400} style={canvasstyle}>
+                <Layer id="bannerlayer">
                     {this.grid.map(grid => grid.draw())}
                 </Layer>
             </Stage>
@@ -74,13 +74,15 @@ export class BannerCanvas extends React.Component {
 
 
 class Hexagon {
+    id:number;
     x:number;
     y:number;
     size:number;
     color:string;
     stroke:string;
 
-    constructor(x:number, y:number, size:number, color:string) {
+    constructor(id:number, x:number, y:number, size:number, color:string) {
+        this.id = id;
         this.x = x;
         this.y = y;
         this.size = size;
@@ -89,7 +91,7 @@ class Hexagon {
     }
 
     draw() {
-        return <RegularPolygon sides={6} radius={this.size} x={this.x} y={this.y} fill={this.color} stroke={this.stroke} />;
+        return <RegularPolygon id={"hex "+this.id} sides={6} radius={this.size} x={this.x} y={this.y} fill={this.color} stroke={this.stroke} />;
     }
 
     setColor(color:string) {

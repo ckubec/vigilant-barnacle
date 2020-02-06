@@ -5,6 +5,7 @@ import {Body} from "./body";
 const bodystyle = {
     position: 'relative' as 'relative',
     overflowY: "scroll" as 'scroll',
+    backgroundColor: "black"
 };
 
 class App extends React.Component {
@@ -13,8 +14,8 @@ class App extends React.Component {
         return (
             <>
                 <Header/>
-                <body style={bodystyle} >
-                    <Body/>
+                <body  style={bodystyle} >
+                    <Body key="pagebody"/>
                 </body>
             </>
         );

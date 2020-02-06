@@ -7,11 +7,11 @@ import NavbarToggle from "react-bootstrap/NavbarToggle";
 import {BannerCanvas} from "./banner";
 
 
-let tabs = ["Chris Kubec", "About", "Skills", "Projects", "Connect"];
+let tabs = ["Chris Kubec", "About", "Skills", "Experience", "Projects", "Connect", "Archive"];
 const buttonstyle = {
     color: "#ffffff",
     fontFamily: 'Dosis, sans-serif',
-    backgroundColor: "black",
+    backgroundColor: "transparent",
     padding: ".5em 1.5em .5em",
     fontSize: "20px",
     marginRight: ".5em",
@@ -41,15 +41,16 @@ export class Header extends React.Component {
 
         return (
             <>
-                <BannerCanvas />
-
-                <Navbar collapseOnSelect style={styling} sticky="top" expand="lg"  >
-                    <NavbarBrand style={titlestyle}><Nav.Link style={buttonstyle}>{brand?.toUpperCase()}</Nav.Link></NavbarBrand>
-                    <NavbarToggle aria-controls="responsive-navbar-nav" style={togglestyle}/>
-                    <NavbarCollapse id="responsive-navbar-nav" >
-                        <Nav className="justify-content-center">{items}</Nav>
-                    </NavbarCollapse>
-                </Navbar>
+                {/*<Navbar>*/}
+                    <BannerCanvas />
+                    <Navbar  style={styling} sticky="top" expand="lg"  >
+                        <NavbarBrand style={titlestyle}><Nav.Link style={buttonstyle}>{brand?.toUpperCase()}</Nav.Link></NavbarBrand>
+                        <NavbarToggle aria-controls="responsive-navbar-nav" style={togglestyle}/>
+                        <NavbarCollapse id="responsive-navbar-nav" >
+                            <Nav className="justify-content-center">{items}</Nav>
+                        </NavbarCollapse>
+                    </Navbar>
+                {/*</Navbar>*/}
             </>
         );
     }
