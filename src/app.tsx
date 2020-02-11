@@ -14,7 +14,7 @@ class App extends React.Component {
         return (
             <>
                 <Header/>
-                <body  style={bodystyle} >
+                <body style={bodystyle}>
                     <Body key="pagebody"/>
                 </body>
             </>

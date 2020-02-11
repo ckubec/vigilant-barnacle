@@ -9,6 +9,10 @@ a.nav-link:hover {
     animation: border-flicker 2s linear forwards, letter-flicker 3s linear infinite;
 }
 
+a.nav-link.active {
+    animation: border-flicker 2s linear forwards, letter-flicker 3s linear infinite;
+}
+
 @keyframes letter-flicker {
     2%, 6%, 11%, 18%, 32%, 37%, 40%, 100% {
         color: orangered;

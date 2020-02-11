@@ -1,7 +1,8 @@
 import React from 'react';
 import {Stage, Layer, RegularPolygon} from 'react-konva';
 
-
+//TODO Optimization and repaint fix rather then current implementation, organize Hexes into 2D Array
+// and during resize keep array the same and only add/drop the cutoff or added Hexes.
 export class BannerCanvas extends React.Component {
     windowheight = window.innerHeight;
     windowwidth = window.innerWidth;
@@ -41,6 +42,7 @@ export class BannerCanvas extends React.Component {
     }
 
     render() {
+        //TODO Extract to style sheet if more styles start popping up in this component.
         const canvasstyle = {
             backgroundColor: "black",
             display: "flex"
@@ -64,6 +66,7 @@ export class BannerCanvas extends React.Component {
         clearInterval(this.interval);
     }
 
+    //TODO tweak animation to create similar effect to the buttons in Nav.
     tick() {
         this.grid[Math.floor(Math.random()*(this.grid.length))].setColor(this.grid[0].randColor());
         this.grid[Math.floor(Math.random()*(this.grid.length))].setColor("rgba(0,0,0,alp".replace("alp", "1"));
