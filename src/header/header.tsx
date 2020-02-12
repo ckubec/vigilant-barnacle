@@ -7,7 +7,7 @@ import NavbarToggle from "react-bootstrap/NavbarToggle";
 import {BannerCanvas} from "./banner";
 
 // TODO Add backend most likely express to retain data.
-let tabs = ["Chris Kubec", "About", "Skills", "Experience", "Projects", "Connect", "Archive"];
+let tabs = ["Chris Kubec", "About", "Skills", /*"Experience", "Projects",*/ "Connect" /*, "Archive"*/];
 // TODO extract styles into CSS files to separate style from code.
 const buttonstyle = {
     color: "#ffffff",
@@ -45,9 +45,9 @@ export class Header extends React.Component {
         return (
             <>
                 {/*<Navbar>*/}
-                {/*    <BannerCanvas />*/}
+                    <BannerCanvas />
                     <Navbar className="sticky-top" style={styling} expand="md" >
-                        {/*<NavbarBrand style={titlestyle}><Nav.Link style={buttonstyle}>{brand?.toUpperCase()}</Nav.Link></NavbarBrand>*/}
+                        <NavbarBrand style={titlestyle}><Nav.Link style={buttonstyle}>{brand?.toUpperCase()}</Nav.Link></NavbarBrand>
                         <NavbarToggle aria-controls="responsive-navbar-nav" style={togglestyle}/>
                         <NavbarCollapse id="responsive-navbar-nav" >
                             <Nav className="justify-content-center">{items}</Nav>

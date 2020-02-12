@@ -1,6 +1,6 @@
 import React from 'react';
-import {Header} from "./header";
-import {Body} from "./body";
+import {Header} from "./header/header";
+import {Body} from "./body/body";
 
 const bodystyle = {
     position: 'relative' as 'relative',
