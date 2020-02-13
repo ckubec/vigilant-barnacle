@@ -5,7 +5,21 @@
   background-color: black;
   //border: 3px solid midnightblue;
   padding-bottom: 0;
+  max-height: fit-content;
+  box-sizing: content-box;
+  height: auto;
+
 };
+
+.card-header {
+  //height: 2em;
+  max-height: fit-content;
+}
+
+.img-fluid {
+  height: 2em;
+  max-height: fit-content;
+}
 
 
 .card-columns {

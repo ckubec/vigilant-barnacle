@@ -9,7 +9,9 @@ import './card.scss';
 export class Skills extends React.Component {
     render() {
         const header = {
-            borderBottom: "medium outset gray"
+            borderBottom: "medium outset gray",
+            //height: '40px',
+            //maxHeight: "40px"
         };
 
         const gutter = {
@@ -18,7 +20,7 @@ export class Skills extends React.Component {
 
         return(
         <Card className="lrgCard" id="Skills">
-            <Card.Header className="text-justify" style={header} as="h3">
+            <Card.Header className="text-justify" style={header} as={"h3"}>
                 <Container>
                     <Row style={gutter}>
                         <img className="img-fluid" style={gutter} src={skillImage} width={40} color={"white"} alt={"skills section"} />
@@ -88,7 +90,7 @@ const imageStyle = {
 
 function skillBuild(skill: string) {
     return (
-        <Card className="p-3" style={cardStyle}>
+        <Card className="p-3" key={skill} style={cardStyle}>
             <Card className="rounded-circle" style={imageStyle}>
                 <Card.Img className="d-flex"  src={require("../img/skills/"+ skill +".svg")} alt="Card image" />
             </Card>

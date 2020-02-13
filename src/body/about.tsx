@@ -12,7 +12,7 @@ export class About extends React.Component {
             borderBottom: "medium outset gray",
             //fontSize: "large",
 
-            fontSize: "1.471em",
+            //fontSize: "1.471em",
             //maxHeight: "40px"
         };
 
@@ -25,7 +25,7 @@ export class About extends React.Component {
 
         return (
             <Card className="lrgCard" id="About">
-                <Card.Header className="" style={header} >
+                <Card.Header className="" style={header} as={"h3"}>
                     <Container>
                         <Row>
                             <img className="img-fluid" src={aboutImage} style={gutter} width={40} color={"white"} alt={"about section"}></img>

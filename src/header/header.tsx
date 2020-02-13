@@ -17,7 +17,7 @@ export class Header extends React.Component {
         return (
             <>
                 {/*<Navbar>*/}
-                    <BannerCanvas />
+                <BannerCanvas key={"Banner"} ><NavbarBrand><Nav.Link>{brand?.toUpperCase()}</Nav.Link></NavbarBrand> </BannerCanvas>
                     <Navbar className="sticky-top" expand="md" >
                         <NavbarToggle className="menuToggle">
                             {/*<div className="container">*/}
