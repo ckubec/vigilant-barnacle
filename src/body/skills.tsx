@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import {Card, Container, Row, CardColumns} from "react-bootstrap";
-import skillImage from "../img/010-checklist.svg";
+import skillImage from "../img/skills-icon.svg";
 import './skills.css';
 import './card.scss';
 
@@ -18,13 +18,17 @@ export class Skills extends React.Component {
             marginRight: "0.5rem"
         };
 
+        const testing = {
+
+        }
+
         return(
         <Card className="lrgCard" id="Skills">
             <Card.Header className="text-justify" style={header} as={"h3"}>
                 <Container>
-                    <Row style={gutter}>
+                    <Row id="card-title-p" style={gutter}>
                         <img className="img-fluid" style={gutter} src={skillImage} width={40} color={"white"} alt={"skills section"} />
-                        <div>Skills</div>
+                        <div id={"card-title"} style={testing}>Skills</div>
                     </Row>
                 </Container>
             </Card.Header>

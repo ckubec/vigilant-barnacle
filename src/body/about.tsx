@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import {AccordionToggle, Button, Card, /*AccordionCollapse,*/ Container, Row} from "react-bootstrap";
 // import image from "../img/About.jpeg";
-import aboutImage from "../img/030-candidate.svg";
+import aboutImage from "../img/about-icon.svg";
 import './card.scss';
 
 
@@ -27,9 +27,9 @@ export class About extends React.Component {
             <Card className="lrgCard" id="About">
                 <Card.Header className="" style={header} as={"h3"}>
                     <Container>
-                        <Row>
+                        <Row id="card-title-p">
                             <img className="img-fluid" src={aboutImage} style={gutter} width={40} color={"white"} alt={"about section"}></img>
-                            <div>About Me</div>
+                            <div id="card-title">About Me</div>
                         </Row>
                     </Container>
                 </Card.Header>

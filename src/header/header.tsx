@@ -17,9 +17,10 @@ export class Header extends React.Component {
         return (
             <>
                 {/*<Navbar>*/}
-                <BannerCanvas key={"Banner"} ><NavbarBrand><Nav.Link>{brand?.toUpperCase()}</Nav.Link></NavbarBrand> </BannerCanvas>
-                    <Navbar className="sticky-top" expand="md" >
-                        <NavbarToggle className="menuToggle">
+                <BannerCanvas key={"Banner"} ></BannerCanvas>
+                    <Navbar collapseOnSelect className="sticky-top" expand="md" >
+                        {/*<NavbarBrand><Nav.Link>{brand?.toUpperCase()}</Nav.Link></NavbarBrand>*/}
+                        <NavbarToggle className="menuToggle"  >
                             {/*<div className="container">*/}
                             {/*    <div className="bar1"></div>*/}
                             {/*    <div className="bar2"></div>*/}
@@ -29,7 +30,7 @@ export class Header extends React.Component {
                         </NavbarToggle>
                         {/*<NavbarBrand style={titlestyle}><Nav.Link style={buttonstyle}>{brand?.toUpperCase()}</Nav.Link></NavbarBrand>*/}
                         <NavbarCollapse id="responsive-navbar-nav" >
-                            <Nav className="justify-content-center">{items}</Nav>
+                            <Nav className="justify-content-center mr-auto">{items}</Nav>
                         </NavbarCollapse>
                     </Navbar>
                 {/*</Navbar>*/}
@@ -40,8 +41,8 @@ export class Header extends React.Component {
 
 function myNavItems(name:string) {
     return (
-        <NavItem key={name} >
+        // <NavItem key={name} >
             <Nav.Link href={"#"+name}>{name.toUpperCase()}</Nav.Link>
-        </NavItem>
+        // </NavItem>
     );
 }

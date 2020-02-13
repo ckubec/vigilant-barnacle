@@ -8,9 +8,16 @@
   max-height: fit-content;
   box-sizing: content-box;
   height: auto;
-
 };
 
+#card-title-p {
+  vertical-align: middle;
+}
+
+#card-title {
+  height: fit-content;
+  //vertical-align: middle;
+}
 .card-header {
   //height: 2em;
   max-height: fit-content;
