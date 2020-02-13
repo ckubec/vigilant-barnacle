@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c1a2a35.chunk.css",
-    "main.js": "/static/js/main.529ba994.chunk.js",
-    "main.js.map": "/static/js/main.529ba994.chunk.js.map",
+    "main.css": "/static/css/main.c6fa69d9.chunk.css",
+    "main.js": "/static/js/main.c8e2daa7.chunk.js",
+    "main.js.map": "/static/js/main.c8e2daa7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cc04dae6.js",
     "runtime-main.js.map": "/static/js/runtime-main.cc04dae6.js.map",
     "static/css/2.64a99b10.chunk.css": "/static/css/2.64a99b10.chunk.css",
-    "static/js/2.c47d447d.chunk.js": "/static/js/2.c47d447d.chunk.js",
-    "static/js/2.c47d447d.chunk.js.map": "/static/js/2.c47d447d.chunk.js.map",
+    "static/js/2.ae75b929.chunk.js": "/static/js/2.ae75b929.chunk.js",
+    "static/js/2.ae75b929.chunk.js.map": "/static/js/2.ae75b929.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d7aff8fa0b4f2b6a5c017f3013bece81.js": "/precache-manifest.d7aff8fa0b4f2b6a5c017f3013bece81.js",
+    "precache-manifest.0c84deb071f7afe170358eadbf8e233d.js": "/precache-manifest.0c84deb071f7afe170358eadbf8e233d.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.64a99b10.chunk.css.map": "/static/css/2.64a99b10.chunk.css.map",
-    "static/css/main.5c1a2a35.chunk.css.map": "/static/css/main.5c1a2a35.chunk.css.map",
-    "static/js/2.c47d447d.chunk.js.LICENSE": "/static/js/2.c47d447d.chunk.js.LICENSE",
+    "static/css/main.c6fa69d9.chunk.css.map": "/static/css/main.c6fa69d9.chunk.css.map",
+    "static/js/2.ae75b929.chunk.js.LICENSE": "/static/js/2.ae75b929.chunk.js.LICENSE",
     "static/media/C Sharp.svg": "/static/media/C Sharp.afa245f5.svg",
     "static/media/C++.svg": "/static/media/C++.5be9bde4.svg",
     "static/media/C.svg": "/static/media/C.00cc5bdb.svg",
@@ -21,15 +21,17 @@
     "static/media/Javascript.svg": "/static/media/Javascript.dd60b11e.svg",
     "static/media/Python.svg": "/static/media/Python.fbef321e.svg",
     "static/media/React.svg": "/static/media/React.aa112e2e.svg",
+    "static/media/ReactBootstrap.svg": "/static/media/ReactBootstrap.83fe61b0.svg",
     "static/media/Typescript.svg": "/static/media/Typescript.5039401c.svg",
     "static/media/about-icon.svg": "/static/media/about-icon.3decae06.svg",
+    "static/media/built-icon.svg": "/static/media/built-icon.af726519.svg",
     "static/media/skills-icon.svg": "/static/media/skills-icon.f147a5a1.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.cc04dae6.js",
     "static/css/2.64a99b10.chunk.css",
-    "static/js/2.c47d447d.chunk.js",
-    "static/css/main.5c1a2a35.chunk.css",
-    "static/js/main.529ba994.chunk.js"
+    "static/js/2.ae75b929.chunk.js",
+    "static/css/main.c6fa69d9.chunk.css",
+    "static/js/main.c8e2daa7.chunk.js"
   ]
 }
