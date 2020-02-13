@@ -8,23 +8,17 @@ import './card.scss';
 
 export class Skills extends React.Component {
     render() {
-        const header = {
-            borderBottom: "medium outset gray",
-            //height: '40px',
-            //maxHeight: "40px"
-        };
-
         const gutter = {
             marginRight: "0.5rem"
         };
 
         const testing = {
 
-        }
+        };
 
         return(
         <Card className="lrgCard" id="Skills">
-            <Card.Header className="text-justify" style={header} as={"h3"}>
+            <Card.Header className="text-justify" as={"h3"}>
                 <Container>
                     <Row id="card-title-p" style={gutter}>
                         <img className="img-fluid" style={gutter} src={skillImage} width={40} color={"white"} alt={"skills section"} />
@@ -54,7 +48,7 @@ function getSkills() {
         //gridAutoColumns: "100px",
         //display: "grid"
         //marginBottom: "0px",
-    }
+    };
 
     return (
         <CardColumns className="" style={columnstyle}>
@@ -69,7 +63,7 @@ const cardStyle ={
     //maxHeight: "1em",
     //gridAutoColumns: "100px",
     //display: "grid"
-}
+};
 
 const listStyle = {
     textAlign: "center" as 'center',
@@ -90,7 +84,7 @@ const imageStyle = {
     //position: "relative" as 'relative',
     overflow: "hidden",
     display: "block"
-}
+};
 
 function skillBuild(skill: string) {
     return (

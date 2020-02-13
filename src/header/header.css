@@ -6,7 +6,6 @@ a {
 }
 
 .sticky-top {
-    /*color: #3739ff;*/
     border-bottom: 3px solid black;
     background: black;
     justify-content: center;
@@ -14,10 +13,6 @@ a {
 
 .navbar-light {
     font-family: Dosis, sans-serif;
-}
-
-div.navbar-collapse collapse show .navbar-light .navbar-nav .nav-link {
-    color: chartreuse;
     text-align: center;
 }
 
@@ -34,8 +29,10 @@ button.menuToggle {
     color: #ffffff;
     background-color: transparent;
     padding: .5em 1.5em .5em;
-    font-size: 20px;
+    font-size: 24px;
     margin-right: .5em;
+    /*width: fit-content;*/
+
 }
 
 a.nav-link:hover {

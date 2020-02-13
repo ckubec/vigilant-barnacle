@@ -10,6 +10,8 @@
   height: auto;
 };
 
+
+
 #card-title-p {
   vertical-align: middle;
 }
@@ -18,6 +20,11 @@
   height: fit-content;
   //vertical-align: middle;
 }
+
+h3.card-header {
+  border-bottom: medium outset gray;
+}
+
 .card-header {
   //height: 2em;
   max-height: fit-content;

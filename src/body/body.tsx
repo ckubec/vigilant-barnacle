@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import {Accordion} from "react-bootstrap";
 import {Skills} from "./skills";
 import {About} from "./about";
+import {Built} from "./built";
 
 
 export class Body extends React.Component {
@@ -20,6 +21,7 @@ export class Body extends React.Component {
                     <Accordion>
                         <About />
                         <Skills />
+                        <Built />
                         {/*<Skills />*/}
                     </Accordion>
                 </div>
