@@ -9,16 +9,23 @@ import './card.scss';
 export class About extends React.Component {
     render() {
         const header = {
-            borderBottom: "medium outset gray"
+            borderBottom: "medium outset gray",
+            //fontSize: "large",
+
+            fontSize: "1.471em",
+            //maxHeight: "40px"
         };
 
         const gutter = {
-            marginRight: "15px"
+            marginRight: "0.5rem",
+            // width: "10%",
+            // maxWidth: "40px",
+            // maxHeight: "40px"
         };
 
         return (
             <Card className="lrgCard" id="About">
-                <Card.Header className="text-justify" style={header} as="h2">
+                <Card.Header className="" style={header} >
                     <Container>
                         <Row>
                             <img className="img-fluid" src={aboutImage} style={gutter} width={40} color={"white"} alt={"about section"}></img>
@@ -26,6 +33,7 @@ export class About extends React.Component {
                         </Row>
                     </Container>
                 </Card.Header>
+
                 <Card.Body>
                     {/*<AccordionCollapse eventKey="open"><Card.Img src={image}></Card.Img></AccordionCollapse>*/}
                     <Card.Text>

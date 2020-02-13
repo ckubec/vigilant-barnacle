@@ -5,6 +5,39 @@ a {
     border: 3px solid midnightblue;
 }
 
+.sticky-top {
+    /*color: #3739ff;*/
+    border-bottom: 3px solid black;
+    background: black;
+    justify-content: center;
+}
+
+.navbar-light {
+    font-family: Dosis, sans-serif;
+}
+
+div.navbar-collapse collapse show .navbar-light .navbar-nav .nav-link {
+    color: chartreuse;
+    text-align: center;
+}
+
+button.menuToggle {
+    justify-content: center;
+    color: white;
+}
+
+.navbar-light .navbar-toggler {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    background-color: transparent;
+    padding: .5em 1.5em .5em;
+    font-size: 20px;
+    margin-right: .5em;
+}
+
 a.nav-link:hover {
     animation: border-flicker 2s linear forwards, letter-flicker 3s linear infinite;
 }

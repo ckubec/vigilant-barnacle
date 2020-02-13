@@ -18,7 +18,7 @@ export class Skills extends React.Component {
 
         return(
         <Card className="lrgCard" id="Skills">
-            <Card.Header className="text-justify" style={header} as="h2">
+            <Card.Header className="text-justify" style={header} as="h3">
                 <Container>
                     <Row style={gutter}>
                         <img className="img-fluid" style={gutter} src={skillImage} width={40} color={"white"} alt={"skills section"} />

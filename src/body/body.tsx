@@ -9,7 +9,7 @@ export class Body extends React.Component {
 
     render() {
         const bodyStyle = {
-            width: "75%",
+            width: "85%",
             justifyContent: "center",
             marginLeft: "auto",
             marginRight: "auto",
