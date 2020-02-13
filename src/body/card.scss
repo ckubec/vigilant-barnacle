@@ -1,0 +1,16 @@
+.lrgCard {
+  //margin-bottom: 0px;
+  margin: 5px 0px 20px;
+  color: #ffffff;
+  background-color: black;
+  //border: 3px solid midnightblue;
+  padding-bottom: 0;
+};
+
+
+.card-columns {
+  @media (max-width: 660px)  {
+    column-count: 2;
+  }
+  column-count: 4;
+}

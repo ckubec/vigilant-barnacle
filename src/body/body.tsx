@@ -20,6 +20,7 @@ export class Body extends React.Component {
                     <Accordion>
                         <About />
                         <Skills />
+                        {/*<Skills />*/}
                     </Accordion>
                 </div>
         );

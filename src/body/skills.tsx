@@ -1,31 +1,23 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Card, Container, Row, CardDeck} from "react-bootstrap";
+import {Card, Container, Row, CardColumns} from "react-bootstrap";
 import skillImage from "../img/010-checklist.svg";
+import './skills.css';
+import './card.scss';
 
 
 export class Skills extends React.Component {
     render() {
-        const cardStyle = {
-            margin: "20px 20px 20px",
-            color: "#ffffff",
-            backgroundColor: "black",
-            borderBottom: "3px solid black",
-            border: "3px solid midnightblue",
-            textShadow: "160",
-            paddingBottom: "0"
-        };
-
         const header = {
             borderBottom: "medium outset gray"
         };
 
         const gutter = {
-            marginRight: "15px"
+            marginRight: "0.5rem"
         };
 
         return(
-        <Card id="Skills" style={cardStyle}>
+        <Card className="lrgCard" id="Skills">
             <Card.Header className="text-justify" style={header} as="h2">
                 <Container>
                     <Row style={gutter}>
@@ -35,7 +27,7 @@ export class Skills extends React.Component {
                 </Container>
             </Card.Header>
 
-            <Card.Body>
+            <Card.Body className="container-fluid">
                 {getSkills()}
             </Card.Body>
         </Card>
@@ -44,32 +36,66 @@ export class Skills extends React.Component {
 
 }
 
-let skillsTree = [ "React", "Python", "Javascript", "Typescript"/*, "Java", "C++", "C#", "Jenkins"*/];
+let skillsTree = [ "React", "Python", "Javascript", "Typescript", "Java", "C++", "C"/*, "Jenkins"*/];
 
 function getSkills() {
     let built = skillsTree.map(skill => skillBuild(skill));
 
+
+    const columnstyle ={
+        //height: "75%",
+        //columnCount: 4,
+        //gridAutoColumns: "100px",
+        //display: "grid"
+        //marginBottom: "0px",
+    }
+
     return (
-        <CardDeck>
+        <CardColumns className="" style={columnstyle}>
             {built}
-        </CardDeck>
+        </CardColumns>
     );
+}
+
+const cardStyle ={
+    marginBottom: "0px",
+    backgroundColor: "black",
+    //maxHeight: "1em",
+    //gridAutoColumns: "100px",
+    //display: "grid"
 }
 
 const listStyle = {
     textAlign: "center" as 'center',
-    color: "Black",
+    color: "white",
+    //maxHeight: "2em",
+    marginBottom: "0px",
+    //display: "block",
+    //position: "relative" as 'relative',
+    overflow: "hidden",
+    textOverflow: "hidden",
+    whiteSpace: "nowrap" as 'nowrap',
+    fontSize: "1rem"
+
 };
+
+const imageStyle = {
+    backgroundColor: "black",
+    //position: "relative" as 'relative',
+    overflow: "hidden",
+    display: "block"
+}
 
 function skillBuild(skill: string) {
     return (
-        <Card style={listStyle}>
-            <Card.Img src={require("../img/skills/"+ skill +".svg")} alt="Card image" />
-            <Card.ImgOverlay>
-                <Card.Title color={"black"} >
-                    {skill}
-                </Card.Title>
-            </Card.ImgOverlay>
+        <Card className="p-3" style={cardStyle}>
+            <Card className="rounded-circle" style={imageStyle}>
+                <Card.Img className="d-flex"  src={require("../img/skills/"+ skill +".svg")} alt="Card image" />
+            </Card>
+
+            <Card.Text style={listStyle} color={"white"} >
+            {skill}
+            </Card.Text>
         </Card>
     );
 }

@@ -47,7 +47,7 @@ export class Header extends React.Component {
                 {/*<Navbar>*/}
                     <BannerCanvas />
                     <Navbar className="sticky-top" style={styling} expand="md" >
-                        <NavbarBrand style={titlestyle}><Nav.Link style={buttonstyle}>{brand?.toUpperCase()}</Nav.Link></NavbarBrand>
+                        {/*<NavbarBrand style={titlestyle}><Nav.Link style={buttonstyle}>{brand?.toUpperCase()}</Nav.Link></NavbarBrand>*/}
                         <NavbarToggle aria-controls="responsive-navbar-nav" style={togglestyle}/>
                         <NavbarCollapse id="responsive-navbar-nav" >
                             <Nav className="justify-content-center">{items}</Nav>
