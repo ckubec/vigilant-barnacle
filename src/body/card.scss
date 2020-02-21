@@ -1,5 +1,6 @@
 .lrgCard {
   //margin-bottom: 0px;
+  //margin: auto;
   margin: 5px 0px 20px;
   color: #ffffff;
   background-color: black;
@@ -10,19 +11,28 @@
   height: auto;
 };
 
-
-
 #card-title-p {
   vertical-align: middle;
 }
 
+.mr-3 {
+  max-width: 80px;
+  max-height: 40px;
+  margin: 0px 0px 0px 1rem;
+
+}
+
 #card-title {
   height: fit-content;
+  padding-top: 5px;
+  //box-sizing: content-box;
+  //border-bottom: medium outset gray;
   //vertical-align: middle;
 }
 
 h3.card-header {
-  border-bottom: medium outset gray;
+  margin: auto;
+  //border-bottom: medium outset gray;
 }
 
 .card-header {
@@ -35,10 +45,18 @@ h3.card-header {
   max-height: fit-content;
 }
 
-
 .card-columns {
   @media (max-width: 660px)  {
     column-count: 2;
   }
   column-count: 4;
+}
+
+.col.card {
+  margin: 0px 0px;
+}
+
+div.build-card  {
+  align-content: center;
+  margin: auto;
 }

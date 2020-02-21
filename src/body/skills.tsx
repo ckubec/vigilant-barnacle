@@ -1,28 +1,29 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Card, Container, Row, CardColumns} from "react-bootstrap";
+import {Card, Container, Row, CardColumns, CardDeck} from "react-bootstrap";
 import skillImage from "../img/skills-icon.svg";
-import './skills.css';
 import './card.scss';
 
 
 export class Skills extends React.Component {
     render() {
         const gutter = {
-            marginRight: "0.5rem"
+            marginRight: "0.5rem",
+            maxWidth: "40px",
+            maxHeight: "40px"
         };
 
-        const testing = {
+        /*const testing = {
 
-        };
+        };*/
 
         return(
         <Card className="lrgCard" id="Skills">
-            <Card.Header className="text-justify" as={"h3"}>
+            <Card.Header className="" as={"h3"}>
                 <Container>
-                    <Row id="card-title-p" style={gutter}>
+                    <Row id="card-title-p" >
                         <img className="img-fluid" style={gutter} src={skillImage} width={40} color={"white"} alt={"skills section"} />
-                        <div id={"card-title"} style={testing}>Skills</div>
+                        <div id={"card-title"}>Skills</div>
                     </Row>
                 </Container>
             </Card.Header>
@@ -51,9 +52,9 @@ function getSkills() {
     };
 
     return (
-        <CardColumns className="" style={columnstyle}>
+        <CardDeck className="" style={columnstyle}>
             {built}
-        </CardColumns>
+        </CardDeck>
     );
 }
 
@@ -88,9 +89,11 @@ const imageStyle = {
 
 function skillBuild(skill: string) {
     return (
-        <Card className="p-3" key={skill} style={cardStyle}>
+        <Card className="col-6" key={skill} style={cardStyle}>
             <Card className="rounded-circle" style={imageStyle}>
-                <Card.Img className="d-flex"  src={require("../img/skills/"+ skill +".svg")} alt="Card image" />
+                <Card>
+                    <Card.Img className="d-flex"  src={require("../img/skills/"+ skill +".svg")} alt="Card image" />
+                </Card>
             </Card>
 
             <Card.Text style={listStyle} color={"white"} >

@@ -21,6 +21,47 @@ button.menuToggle {
     color: white;
 }
 
+/*.navbar-light .navbar-brand {*/
+/*    position: absolute;*/
+/*    top: -225px;*/
+/*    !*color: white;*!*/
+
+/*    !*background-color: #fff;*!*/
+/*    color: #000;*/
+/*    mix-blend-mode: screen;*/
+/*    !*position: absolute;*!*/
+/*    !*top: 50%;*!*/
+/*    !*left: 50%;*!*/
+/*    !*transform: translate(-50%, -50%);*!*/
+/*    padding: 16px;*/
+/*    border-radius: 8px;*/
+/*    !*font-family: arial;*!*/
+/*    font-size: 1.5em;*/
+/*    font-weight: bold;*/
+/*    !*margin: 0;*!*/
+/*    opacity: 0.9;*/
+/*}*/
+/*.navbar-light .navbar-brand:last-child {*/
+/*    mix-blend-mode: normal;*/
+/*    color: transparent;*/
+/*    background: none;*/
+/*    box-shadow: 0 0 16px #000, 0 0 32px #000;*/
+/*    background-color: white;*/
+/*}*/
+
+a.title {
+    position: absolute;
+    top: -225px;
+    color: transparent;
+    background-color: black;
+    font-size: 2em;
+    font-weight: 900;
+    opacity: 0.8;
+    box-shadow: 0 0 16px #000, 0 0 32px #000;
+    animation: border-flicker 2s linear forwards, letter-flicker 3s linear infinite;
+    mix-blend-mode: normal;
+}
+
 .navbar-light .navbar-toggler {
     color: white;
 }

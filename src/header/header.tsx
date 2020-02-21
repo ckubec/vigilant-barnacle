@@ -7,7 +7,7 @@ import NavbarToggle from "react-bootstrap/NavbarToggle";
 import {BannerCanvas} from "./banner";
 
 // TODO Add backend most likely express to retain data.
-let tabs = ["Chris Kubec", "About", "Skills", /*"Experience", "Projects",*/ "Connect" /*, "Archive"*/];
+let tabs = ["Chris Kubec", "About", "Skills", /*"Experience", "Projects",*/ "Contact" /*, "Archive"*/];
 
 export class Header extends React.Component {
     render() {
@@ -19,7 +19,9 @@ export class Header extends React.Component {
                 {/*<Navbar>*/}
                 <BannerCanvas key={"Banner"} ></BannerCanvas>
                     <Navbar collapseOnSelect className="sticky-top" expand="md" >
-                        {/*<NavbarBrand><Nav.Link>{brand?.toUpperCase()}</Nav.Link></NavbarBrand>*/}
+                        <Nav.Link className="title">{brand?.toUpperCase()}</Nav.Link>
+                        {/*<Nav.Link className="title">{brand?.toUpperCase()}</Nav.Link>*/}
+
                         <NavbarToggle className="menuToggle"  >
                             {/*<div className="container">*/}
                             {/*    <div className="bar1"></div>*/}

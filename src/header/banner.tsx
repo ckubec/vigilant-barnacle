@@ -1,5 +1,6 @@
 import React from 'react';
-import {Stage, Layer, RegularPolygon} from 'react-konva';
+import {Stage, Layer, RegularPolygon, Text} from 'react-konva';
+import {Nav, NavbarBrand} from "react-bootstrap";
 
 //TODO Optimization and repaint fix rather then current implementation, organize Hexes into 2D Array
 // and during resize keep array the same and only add/drop the cutoff or added Hexes.
@@ -51,8 +52,9 @@ export class BannerCanvas extends React.Component {
         return (
             <Stage id="bannerstage" width={this.windowwidth} height={400} style={canvasstyle} key={"BannerStage"}>
                 <Layer id="bannerlayer">
+                    {/*<NavbarBrand><Nav.Link>Chris Kubec</Nav.Link></NavbarBrand>*/}
                     {this.grid.map(grid => grid.draw())}
-                    {/*<Text height={20} width={150} fontSize={20} x={this.windowwidth/2-75} y={400/2} text={"Chris Kubec"} fill={"white"} ></Text>*/}
+                    {/*<Text fontSize={20} x={this.windowwidth/2} y={400/2} text={"Chris Kubec"} fill={"transparent"} className="title" fillEnabled={true} ></Text>*/}
                 </Layer>
             </Stage>
         );
