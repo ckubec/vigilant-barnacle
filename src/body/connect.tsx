@@ -16,7 +16,7 @@ export class Contact extends React.Component {
         const testing = {};
 
         return (
-            <Card className="lrgCard" id="Contact">
+            <div className="lrgCard" id="Contact">
                 <Card.Header className="text-justify" as={"h3"}>
                     <Container>
                         <Row id="card-title-p" >
@@ -27,10 +27,9 @@ export class Contact extends React.Component {
                 </Card.Header>
 
                 <Card.Body>
-
-                    Testing space
+                    Add Contact info
                 </Card.Body>
-            </Card>
+            </div>
         );
     }
 }

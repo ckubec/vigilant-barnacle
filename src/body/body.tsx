@@ -10,21 +10,20 @@ import {Contact} from "./connect";
 export class Body extends React.Component {
 
     render() {
-        const bodyStyle = {
-            width: "85%",
-            justifyContent: "center",
-            marginLeft: "auto",
-            marginRight: "auto",
-            backgroundColor: "black"
-        };
+        // const bodyStyle = {
+        //     // width: "85%",
+        //     //justifyContent: "center",
+        //     //marginLeft: "auto",
+        //     //marginRight: "auto",
+        //     //backgroundColor: "black"
+        // };
         return (
-                <div style={bodyStyle}>
+                <div className={"Body"}>
                     <Accordion>
                         <About />
                         <Skills />
                         <Contact />
                         <Built />
-                        {/*<Skills />*/}
                     </Accordion>
                 </div>
         );

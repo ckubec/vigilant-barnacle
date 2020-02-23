@@ -18,7 +18,7 @@ export class Skills extends React.Component {
         };*/
 
         return(
-        <Card className="lrgCard" id="Skills">
+        <div className="lrgCard" id="Skills">
             <Card.Header className="" as={"h3"}>
                 <Container>
                     <Row id="card-title-p" >
@@ -28,10 +28,10 @@ export class Skills extends React.Component {
                 </Container>
             </Card.Header>
 
-            <Card.Body className="container-fluid">
+            <div className="container-fluid">
                 {getSkills()}
-            </Card.Body>
-        </Card>
+            </div>
+        </div>
         );
     }
 
@@ -42,7 +42,6 @@ let skillsTree = [ "React", "Python", "Javascript", "Typescript", "Java", "C++",
 function getSkills() {
     let built = skillsTree.map(skill => skillBuild(skill));
 
-
     const columnstyle ={
         //height: "75%",
         //columnCount: 4,
@@ -52,9 +51,9 @@ function getSkills() {
     };
 
     return (
-        <CardDeck className="" style={columnstyle}>
+        <div className="deck" style={columnstyle}>
             {built}
-        </CardDeck>
+        </div>
     );
 }
 

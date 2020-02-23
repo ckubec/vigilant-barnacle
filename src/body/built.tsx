@@ -31,7 +31,7 @@ export class Built extends React.Component {
         }
 
         return (
-            <Card className="lrgCard" id="Built" style={built}>
+            <div className="lrgCard" id="Built" style={built}>
                 <Card.Header style={built} as={"h6"}>
                     <Container>
                         <Row id="card-title-p">
@@ -66,7 +66,7 @@ export class Built extends React.Component {
                         </Container>
                 </Card.Body>
 
-            </Card>
+            </div>
         );
     }
 }

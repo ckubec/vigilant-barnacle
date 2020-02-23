@@ -10,12 +10,13 @@ export class About extends React.Component {
     render() {
         const gutter = {
             marginRight: "0.5rem",
-             maxWidth: "40px",
-             maxHeight: "40px"
+            textAlign: "center" as "center",
+            //maxWidth: "40px",
+            maxHeight: "40px"
         };
 
         return (
-            <Card className="lrgCard" id="About">
+            <div className="lrgCard" id="About">
                 <Card.Header className="" as={"h3"}>
                     <Container>
                         <Row id="card-title-p">
@@ -38,7 +39,7 @@ export class About extends React.Component {
                     </AccordionCollapse>
                     <AccordionToggle as={Button} variant="link" eventKey="open">more</AccordionToggle>
                 </Card.Body>
-            </Card>
+            </div>
         );
     }
 }

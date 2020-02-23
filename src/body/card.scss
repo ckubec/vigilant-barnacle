@@ -3,16 +3,22 @@
   //margin: auto;
   margin: 5px 0px 20px;
   color: #ffffff;
-  background-color: black;
+  //background-color: black;
   //border: 3px solid midnightblue;
   padding-bottom: 0;
-  max-height: fit-content;
-  box-sizing: content-box;
-  height: auto;
+  //max-height: fit-content;
+  //box-sizing: content-box;
+  //height: auto;
 };
 
 #card-title-p {
-  vertical-align: middle;
+  //vertical-align: middle;
+  //text-align: center;
+  //align-content: center;
+  margin: auto;
+  flex-wrap: nowrap;
+  //padding: 40px;
+  //width: 50%;
 }
 
 .mr-3 {
@@ -45,11 +51,17 @@ h3.card-header {
   max-height: fit-content;
 }
 
-.card-columns {
-  @media (max-width: 660px)  {
-    column-count: 2;
-  }
-  column-count: 4;
+//.card-columns {
+//  @media (max-width: 660px)  {
+//    column-count: 2;
+//  }
+//  column-count: 4;
+//}
+
+.deck {
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  display: flex;
 }
 
 .col.card {
@@ -57,6 +69,6 @@ h3.card-header {
 }
 
 div.build-card  {
-  align-content: center;
-  margin: auto;
+  //align-content: center;
+  //margin: auto;
 }

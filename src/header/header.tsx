@@ -20,7 +20,6 @@ export class Header extends React.Component {
                 <BannerCanvas key={"Banner"} ></BannerCanvas>
                     <Navbar collapseOnSelect className="sticky-top" expand="md" >
                         <Nav.Link className="title">{brand?.toUpperCase()}</Nav.Link>
-                        {/*<Nav.Link className="title">{brand?.toUpperCase()}</Nav.Link>*/}
 
                         <NavbarToggle className="menuToggle"  >
                             {/*<div className="container">*/}
@@ -30,7 +29,6 @@ export class Header extends React.Component {
                             {/*</div>*/}
                             MENU
                         </NavbarToggle>
-                        {/*<NavbarBrand style={titlestyle}><Nav.Link style={buttonstyle}>{brand?.toUpperCase()}</Nav.Link></NavbarBrand>*/}
                         <NavbarCollapse id="responsive-navbar-nav" >
                             <Nav className="justify-content-center mr-auto">{items}</Nav>
                         </NavbarCollapse>
