@@ -10,10 +10,10 @@ $colors: (
 }
 
 //Contact Div Body
-div .container {
+div.body.container {
   div {
+    background-color: color(primarybackground);
     div {
-
       a {
         //Image
         img {

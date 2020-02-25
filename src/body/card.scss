@@ -5,45 +5,39 @@ $colors: (
         primaryborder: midnightblue,
 );
 
+
 //Title of each section
 .lrgCard {
   color: map_get($colors, primarytext);
 
-  div .title-bar {
+  div.title-bar.container {
+    text-align: center;
+    padding: 10px;
 
     .row {
       margin: auto;
       flex-wrap: nowrap;
+      //background-color: red;
+      //border-bottom: solid darkgray;
 
-      h2.card-title {
+      img.img-fluid {
+        //background-color: gray;
+        height: 100%;
+        margin-right: 0.5rem;
+      }
 
+      h2#card-title {
+
+        //background-color: aqua;
       }
     }
   }
 }
 
+
+//Refactor to own file
 .mr-3 {
   max-width: 80px;
   max-height: 40px;
   margin: 0px 0px 0px 1rem;
-}
-
-#card-title {
-  height: fit-content;
-  padding-top: 5px;
-}
-
-.img-fluid {
-  height: 2em;
-  max-height: fit-content;
-}
-
-.deck {
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  display: flex;
-}
-
-.col.card {
-  margin: 0px 0px;
 }

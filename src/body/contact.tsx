@@ -1,6 +1,6 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import {Card, Col, Container, Row} from "react-bootstrap";
+//import 'bootstrap/dist/css/bootstrap.css';
+import {Col, Container, Row} from "react-bootstrap";
 import iconImage from "../img/contact-icon.svg";
 import './card.scss';
 import './contact.scss';
@@ -15,23 +15,18 @@ let links = [
 
 export class Contact extends React.Component {
     render() {
-        const gutter = {
-            marginRight: "0.5rem",
-            maxWidth: "40px",
-            maxHeight: "40px"
-        };
         let linkdivs = links.map(item => link(item.name, item.href));
 
         return (
             <div className="lrgCard" id="Contact">
-                <Container className="title-bar">
+                <Container className="title-bar" id="titleBar">
                     <Row id="card-title-p" >
-                        <img className="img-fluid" style={gutter} src={iconImage} width={40} color={"white"} alt={"contact section"}/>
+                        <img className="img-fluid" src={iconImage} width={40} color={"white"} alt={"contact section"}/>
                         <h2 id={"card-title"} >Contact</h2>
                     </Row>
                 </Container>
 
-                <Container >
+                <Container className="body">
                     <Row className="justify-content-center">
                         {linkdivs}
                     </Row>
@@ -43,10 +38,10 @@ export class Contact extends React.Component {
 
 function link(key: string, href: string) {
     return(
-        <Col xs={4} sm={2} >
-            <a href={href} >
-                <img src={require("../img/contact/" + key + ".svg")} alt={key} />
-                <h6 >{key}</h6>
+        <Col xs={4} sm={2} key={key+"link"}>
+            <a href={href}>
+                <img src={require("../img/contact/" + key + ".svg")} alt={key}/>
+                <h6>{key}</h6>
             </a>
         </Col>
     );

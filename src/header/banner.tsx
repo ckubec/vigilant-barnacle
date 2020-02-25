@@ -1,12 +1,11 @@
 import React from 'react';
-import {Stage, Layer, RegularPolygon, Text} from 'react-konva';
-import {Nav, NavbarBrand} from "react-bootstrap";
+import {Stage, Layer, RegularPolygon } from 'react-konva';
 
 //TODO Optimization and repaint fix rather then current implementation, organize Hexes into 2D Array
 // and during resize keep array the same and only add/drop the cutoff or added Hexes.
 export class BannerCanvas extends React.Component {
     windowheight = 425;
-    windowwidth = window.innerWidth;
+    windowwidth = window.screen.availWidth;
     grid: Hexagon[] = [];
     interval: any;
     constructor(props:any) {
@@ -37,8 +36,7 @@ export class BannerCanvas extends React.Component {
     }
 
     handleWindowResize() {
-        //this.windowheight = 400;
-        this.windowwidth = window.innerWidth;
+        this.windowwidth = window.screen.availWidth;
         this.rebuildGrid();
     }
 
@@ -50,9 +48,8 @@ export class BannerCanvas extends React.Component {
         };
 
         return (
-            <Stage id="bannerstage" width={this.windowwidth} height={400} style={canvasstyle} key={"BannerStage"}>
+            <Stage id="bannerstage" width={window.screen.availWidth} height={400} style={canvasstyle} key={"BannerStage"} >
                 <Layer id="bannerlayer">
-                    {/*<NavbarBrand><Nav.Link>Chris Kubec</Nav.Link></NavbarBrand>*/}
                     {this.grid.map(grid => grid.draw())}
                     {/*<Text fontSize={20} x={this.windowwidth/2} y={400/2} text={"Chris Kubec"} fill={"transparent"} className="title" fillEnabled={true} ></Text>*/}
                 </Layer>
@@ -66,6 +63,7 @@ export class BannerCanvas extends React.Component {
     }
 
     componentWillUnmount(): void {
+        window.removeEventListener("resize", this.handleWindowResize);
         clearInterval(this.interval);
     }
 
@@ -97,7 +95,7 @@ class Hexagon {
     }
 
     draw() {
-        return <RegularPolygon id={"hex "+this.id} key={"hex" + this.id} sides={6} radius={this.size} x={this.x} y={this.y} fill={this.color} stroke={this.stroke} />;
+        return <RegularPolygon id={"hex "+this.id} key={"hex" + this.id} sides={6} radius={this.size} x={this.x} y={this.y} fill={this.color} stroke={this.stroke} preventDefault={false} />;
     }
 
     setColor(color:string) {

@@ -17,7 +17,6 @@ export class Header extends React.Component {
         return (
             <>
                 <BannerCanvas key={"Banner"} ></BannerCanvas>
-
                 <Navbar collapseOnSelect className="sticky-top" expand="md" >
                     <Nav.Link className="title">{brand?.toUpperCase()}</Nav.Link>
 
@@ -36,6 +35,6 @@ export class Header extends React.Component {
 
 function myNavItems(name:string) {
     return (
-        <Nav.Link href={"#"+name}>{name.toUpperCase()}</Nav.Link>
+        <Nav.Link href={"#"+name} key={name}>{name.toUpperCase()}</Nav.Link>
     );
 }

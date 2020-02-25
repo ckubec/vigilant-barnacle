@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
 import {AccordionCollapse, AccordionToggle, Button, Card, Container, Row} from "react-bootstrap";
 import aboutImage from "../img/about-icon.svg";
 import './card.scss';
@@ -7,18 +6,11 @@ import './card.scss';
 
 export class About extends React.Component {
     render() {
-        const gutter = {
-            marginRight: "0.5rem",
-            textAlign: "center" as "center",
-            //maxWidth: "40px",
-            maxHeight: "40px"
-        };
-
         return (
             <div className="lrgCard" id="About">
                 <Container className="title-bar">
                     <Row id="card-title-p">
-                        <img className="img-fluid" src={aboutImage} style={gutter} width={40} color={"white"} alt={"about section"}/>
+                        <img className="img-fluid" src={aboutImage} width={40} color={"white"} alt={"about section"}/>
                         <h2 id="card-title">About Me</h2>
                     </Row>
                 </Container>

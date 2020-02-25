@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
+//import 'bootstrap/dist/css/bootstrap.css';
 import {
     Card,
     Container,
@@ -45,15 +45,15 @@ export class Built extends React.Component {
                         <Container>
                             <Row>
                                 <div className={"col"} style={card}>
-                                    <img className={"mr-3"} src={require("../img/skills/React.svg")} />
+                                    <img className={"mr-3"} src={require("../img/skills/React.svg")} alt={"ReactImage"}/>
                                     <div>React</div>
                                 </div>
                                 <div className={"col"} style={card}>
-                                    <img className={"mr-3"} src={require("../img/skills/Typescript.svg")} />
+                                    <img className={"mr-3"} src={require("../img/skills/Typescript.svg")} alt={"TypescriptImage"}/>
                                     <div>Typescript</div>
                                 </div>
                                 <div className={"col"} style={card}>
-                                    <img className={"mr-3"} src={require("../img/skills/ReactBootstrap.svg")} />
+                                    <img className={"mr-3"} src={require("../img/skills/ReactBootstrap.svg")} alt={"ReactBootstrapImage"}/>
                                     <div>Bootstrap</div>
                                 </div>
                             </Row>

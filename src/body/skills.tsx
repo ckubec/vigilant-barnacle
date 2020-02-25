@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
 import {Card, Container, Row, Col} from "react-bootstrap";
 import skillImage from "../img/skills-icon.svg";
 import './card.scss';
@@ -7,18 +6,12 @@ import './card.scss';
 
 export class Skills extends React.Component {
     render() {
-        const gutter = {
-            marginRight: "0.5rem",
-            maxWidth: "40px",
-            maxHeight: "40px"
-        };
-
         return(
         <div className="lrgCard" id="Skills">
             <Container className="title-bar">
                 <Row id="card-title-p" >
-                    <img className="img-fluid" style={gutter} src={skillImage} width={40} color={"white"} alt={"skills section"} />
-                    <h2>Skills</h2>
+                    <img className="img-fluid" src={skillImage} width={40} color={"white"} alt={"skills section"} />
+                    <h2 id="card-title">Skills</h2>
                 </Row>
             </Container>
 
