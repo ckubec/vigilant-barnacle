@@ -5,7 +5,7 @@ import {Stage, Layer, RegularPolygon } from 'react-konva';
 // and during resize keep array the same and only add/drop the cutoff or added Hexes.
 export class BannerCanvas extends React.Component {
     windowheight = 425;
-    windowwidth = window.screen.availWidth;
+    windowwidth = document.body.clientWidth;
     grid: Hexagon[] = [];
     interval: any;
     constructor(props:any) {
@@ -36,7 +36,7 @@ export class BannerCanvas extends React.Component {
     }
 
     handleWindowResize() {
-        this.windowwidth = window.screen.availWidth;
+        this.windowwidth = document.body.clientWidth;
         this.rebuildGrid();
     }
 
@@ -48,7 +48,7 @@ export class BannerCanvas extends React.Component {
         };
 
         return (
-            <Stage id="bannerstage" width={window.screen.availWidth} height={400} style={canvasstyle} key={"BannerStage"} >
+            <Stage id="bannerstage" width={document.body.clientWidth} height={400} style={canvasstyle} key={"BannerStage"} >
                 <Layer id="bannerlayer">
                     {this.grid.map(grid => grid.draw())}
                     {/*<Text fontSize={20} x={this.windowwidth/2} y={400/2} text={"Chris Kubec"} fill={"transparent"} className="title" fillEnabled={true} ></Text>*/}
