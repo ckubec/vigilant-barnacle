@@ -44,28 +44,21 @@ export class Built extends React.Component {
                 <Card.Body>
                         <Container>
                             <Row>
-                                <Card className={"col"} style={card}>
-                                    <Row className={"build-card"}>
-                                        <Card.Img className={"mr-3"} src={require("../img/skills/React.svg")} />
-                                        <Card.Text>React</Card.Text>
-                                    </Row>
-                                </Card>
-                                <Card className={"col"} style={card}>
-                                    <Row className={"build-card"}>
-                                        <Card.Img className={"mr-3"} src={require("../img/skills/Typescript.svg")} />
-                                        <Card.Text>Typescript</Card.Text>
-                                    </Row>
-                                </Card>
-                                <Card className={"col"} style={card}>
-                                    <Row className={"build-card"}>
-                                        <Card.Img className={"mr-3"} src={require("../img/skills/ReactBootstrap.svg")} />
-                                        <Card.Text>Bootstrap</Card.Text>
-                                    </Row>
-                                </Card>
+                                <div className={"col"} style={card}>
+                                    <img className={"mr-3"} src={require("../img/skills/React.svg")} />
+                                    <div>React</div>
+                                </div>
+                                <div className={"col"} style={card}>
+                                    <img className={"mr-3"} src={require("../img/skills/Typescript.svg")} />
+                                    <div>Typescript</div>
+                                </div>
+                                <div className={"col"} style={card}>
+                                    <img className={"mr-3"} src={require("../img/skills/ReactBootstrap.svg")} />
+                                    <div>Bootstrap</div>
+                                </div>
                             </Row>
                         </Container>
                 </Card.Body>
-
             </div>
         );
     }

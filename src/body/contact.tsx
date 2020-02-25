@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import {Card, Col, Container, Row} from "react-bootstrap";
 import iconImage from "../img/contact-icon.svg";
 import './card.scss';
-// import './contact.scss';
+import './contact.scss';
 
 let links = [
     {name:"LinkedIn", href:"https://www.linkedin.com/in/chriskubec/"},
@@ -24,14 +24,12 @@ export class Contact extends React.Component {
 
         return (
             <div className="lrgCard" id="Contact">
-                <Card.Header className="text-justify" as={"h3"}>
-                    <Container>
-                        <Row id="card-title-p" >
-                            <img className="img-fluid" style={gutter} src={iconImage} width={40} color={"white"} alt={"contact section"}/>
-                            <div id={"card-title"} >Contact</div>
-                        </Row>
-                    </Container>
-                </Card.Header>
+                <Container className="title-bar">
+                    <Row id="card-title-p" >
+                        <img className="img-fluid" style={gutter} src={iconImage} width={40} color={"white"} alt={"contact section"}/>
+                        <h2 id={"card-title"} >Contact</h2>
+                    </Row>
+                </Container>
 
                 <Container >
                     <Row className="justify-content-center">
@@ -47,7 +45,7 @@ function link(key: string, href: string) {
     return(
         <Col xs={4} sm={2} >
             <a href={href} >
-                <img src={require("../img/contact/"+ key +".svg")} width={40} />
+                <img src={require("../img/contact/" + key + ".svg")} alt={key} />
                 <h6 >{key}</h6>
             </a>
         </Col>

@@ -1,0 +1,33 @@
+$colors: (
+        primarybackground: black,
+        secondarybackground: gray,
+        primarytext: white,
+        primaryborder: midnightblue,
+);
+
+@function color($colorname) {
+  @return map_get($colors, $colorname);
+}
+
+//Contact Div Body
+div .container {
+  div {
+    div {
+
+      a {
+        //Image
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50px;
+        }
+        //Link Label
+        h6 {
+          color: color(primarytext);
+          text-align: center;
+        }
+      }
+    }
+  }
+}

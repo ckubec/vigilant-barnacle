@@ -4,19 +4,11 @@ import {Accordion} from "react-bootstrap";
 import {Skills} from "./skills";
 import {About} from "./about";
 import {Built} from "./built";
-import {Contact} from "./connect";
+import {Contact} from "./contact";
 
 
 export class Body extends React.Component {
-
     render() {
-        // const bodyStyle = {
-        //     // width: "85%",
-        //     //justifyContent: "center",
-        //     //marginLeft: "auto",
-        //     //marginRight: "auto",
-        //     //backgroundColor: "black"
-        // };
         return (
                 <div className={"Body"}>
                     <Accordion>

@@ -5,65 +5,38 @@ $colors: (
         primaryborder: midnightblue,
 );
 
+//Title of each section
 .lrgCard {
-  //margin-bottom: 0px;
-  //margin: auto;
-  margin: 5px 0px 20px;
   color: map_get($colors, primarytext);
-  //background-color: black;
-  //border: 3px solid map_get($colors, primaryborder);
-  padding-bottom: 0;
-  //max-height: fit-content;
-  //box-sizing: content-box;
-  //height: auto;
-};
 
-#card-title-p {
-  //vertical-align: middle;
-  //text-align: center;
-  //align-content: center;
-  margin: auto;
-  flex-wrap: nowrap;
-  //padding: 40px;
-  //width: 50%;
+  div .title-bar {
+
+    .row {
+      margin: auto;
+      flex-wrap: nowrap;
+
+      h2.card-title {
+
+      }
+    }
+  }
 }
 
 .mr-3 {
   max-width: 80px;
   max-height: 40px;
   margin: 0px 0px 0px 1rem;
-
 }
 
 #card-title {
   height: fit-content;
   padding-top: 5px;
-  //box-sizing: content-box;
-  //border-bottom: medium outset gray;
-  //vertical-align: middle;
-}
-
-h3.card-header {
-  margin: auto;
-  //border-bottom: medium outset gray;
-}
-
-.card-header {
-  //height: 2em;
-  max-height: fit-content;
 }
 
 .img-fluid {
   height: 2em;
   max-height: fit-content;
 }
-
-//.card-columns {
-//  @media (max-width: 660px)  {
-//    column-count: 2;
-//  }
-//  column-count: 4;
-//}
 
 .deck {
   flex-wrap: wrap;
@@ -73,9 +46,4 @@ h3.card-header {
 
 .col.card {
   margin: 0px 0px;
-}
-
-div.build-card  {
-  //align-content: center;
-  //margin: auto;
 }

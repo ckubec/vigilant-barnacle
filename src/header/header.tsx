@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Nav, Navbar, NavbarBrand, NavItem} from "react-bootstrap";
+import {Nav, Navbar} from "react-bootstrap";
 import './header.scss';
 import NavbarCollapse from "react-bootstrap/NavbarCollapse";
 import NavbarToggle from "react-bootstrap/NavbarToggle";
