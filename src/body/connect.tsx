@@ -1,9 +1,17 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Card, Container, Row} from "react-bootstrap";
+import {Card, Col, Container, Row} from "react-bootstrap";
 import iconImage from "../img/contact-icon.svg";
 import './card.scss';
+// import './contact.scss';
 
+let links = [
+    {name:"LinkedIn", href:"https://www.linkedin.com/in/chriskubec/"},
+    {name:"Email", href:"mailto:ckubec@gmail.com"},
+    {name:"Text", href:"sms:206-245-0897"},
+    {name:"Phone", href:"tel:206-245-0897"},
+    {name:"Github", href:"https://github.com/ckubec"},
+];
 
 export class Contact extends React.Component {
     render() {
@@ -12,8 +20,7 @@ export class Contact extends React.Component {
             maxWidth: "40px",
             maxHeight: "40px"
         };
-
-        const testing = {};
+        let linkdivs = links.map(item => link(item.name, item.href));
 
         return (
             <div className="lrgCard" id="Contact">
@@ -26,10 +33,23 @@ export class Contact extends React.Component {
                     </Container>
                 </Card.Header>
 
-                <Card.Body>
-                    Add Contact info
-                </Card.Body>
+                <Container >
+                    <Row className="justify-content-center">
+                        {linkdivs}
+                    </Row>
+                </Container>
             </div>
         );
     }
+}
+
+function link(key: string, href: string) {
+    return(
+        <Col xs={4} sm={2} >
+            <a href={href} >
+                <img src={require("../img/contact/"+ key +".svg")} width={40} />
+                <h6 >{key}</h6>
+            </a>
+        </Col>
+    );
 }

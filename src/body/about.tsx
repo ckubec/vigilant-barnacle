@@ -30,10 +30,12 @@ export class About extends React.Component {
                     {/*<AccordionCollapse eventKey="open"><Card.Img src={image}></Card.Img></AccordionCollapse>*/}
                     <Card.Text>
                         Hi my name is Chris, a Full Stack Software Engineer located in Seattle, Washington...
-                        This site is still under construction, comeback soon.  <i>Posted - 2/21/20</i>
+                        This site is still under construction, come back soon.  <i>Posted - 2/25/20</i>
                     </Card.Text>
                     <AccordionCollapse eventKey="open">
                     <Card.Text>
+
+
 
                     </Card.Text>
                     </AccordionCollapse>

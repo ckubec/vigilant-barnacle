@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Card, Container, Row, CardColumns, CardDeck} from "react-bootstrap";
+import {Card, Container, Row, CardColumns, CardDeck, Col} from "react-bootstrap";
 import skillImage from "../img/skills-icon.svg";
 import './card.scss';
 
@@ -12,10 +12,6 @@ export class Skills extends React.Component {
             maxWidth: "40px",
             maxHeight: "40px"
         };
-
-        /*const testing = {
-
-        };*/
 
         return(
         <div className="lrgCard" id="Skills">
@@ -37,7 +33,7 @@ export class Skills extends React.Component {
 
 }
 
-let skillsTree = [ "React", "Python", "Javascript", "Typescript", "Java", "C++", "C"/*, "Jenkins"*/];
+let skillsTree = [ "React", "Python", "Javascript", "Typescript", "Java" /*, "C++", "C"/*, "Jenkins"*/];
 
 function getSkills() {
     let built = skillsTree.map(skill => skillBuild(skill));
@@ -51,9 +47,9 @@ function getSkills() {
     };
 
     return (
-        <div className="deck" style={columnstyle}>
+        <Row className="deck" style={columnstyle}>
             {built}
-        </div>
+        </Row>
     );
 }
 
@@ -88,16 +84,16 @@ const imageStyle = {
 
 function skillBuild(skill: string) {
     return (
-        <Card className="col-6" key={skill} style={cardStyle}>
-            <Card className="rounded-circle" style={imageStyle}>
+        <Col xs={6} sm={4} md={3} key={skill} style={cardStyle}>
+            {/*<Card className="rounded-circle" style={imageStyle}>*/}
                 <Card>
                     <Card.Img className="d-flex"  src={require("../img/skills/"+ skill +".svg")} alt="Card image" />
                 </Card>
-            </Card>
+            {/*</Card>*/}
 
             <Card.Text style={listStyle} color={"white"} >
             {skill}
             </Card.Text>
-        </Card>
+        </Col>
     );
 }
