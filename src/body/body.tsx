@@ -4,6 +4,7 @@ import {Skills} from "./skills";
 import {About} from "./about";
 import {Built} from "./built";
 import {Contact} from "./contact";
+import {Portfolio} from "./portfolio";
 
 
 export class Body extends React.Component {
@@ -13,6 +14,7 @@ export class Body extends React.Component {
                     <Accordion>
                         <About />
                         <Skills />
+                        <Portfolio />
                         <Contact />
                         <Built />
                     </Accordion>
