@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.8578348e.chunk.css",
-    "main.js": "/static/js/main.35b188c8.chunk.js",
-    "main.js.map": "/static/js/main.35b188c8.chunk.js.map",
+    "main.css": "/static/css/main.b94ff8bf.chunk.css",
+    "main.js": "/static/js/main.bdfe3156.chunk.js",
+    "main.js.map": "/static/js/main.bdfe3156.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cc04dae6.js",
     "runtime-main.js.map": "/static/js/runtime-main.cc04dae6.js.map",
     "static/css/2.64a99b10.chunk.css": "/static/css/2.64a99b10.chunk.css",
     "static/js/2.1e4a32b4.chunk.js": "/static/js/2.1e4a32b4.chunk.js",
     "static/js/2.1e4a32b4.chunk.js.map": "/static/js/2.1e4a32b4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c8ab78a341bbaefc44d2cab84bf9c9ea.js": "/precache-manifest.c8ab78a341bbaefc44d2cab84bf9c9ea.js",
+    "precache-manifest.50fdc98301da89b2b9b50d2059b4b027.js": "/precache-manifest.50fdc98301da89b2b9b50d2059b4b027.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.64a99b10.chunk.css.map": "/static/css/2.64a99b10.chunk.css.map",
-    "static/css/main.8578348e.chunk.css.map": "/static/css/main.8578348e.chunk.css.map",
+    "static/css/main.b94ff8bf.chunk.css.map": "/static/css/main.b94ff8bf.chunk.css.map",
     "static/js/2.1e4a32b4.chunk.js.LICENSE": "/static/js/2.1e4a32b4.chunk.js.LICENSE",
     "static/media/C Sharp.svg": "/static/media/C Sharp.afa245f5.svg",
     "static/media/C++.svg": "/static/media/C++.5be9bde4.svg",
@@ -21,7 +21,7 @@
     "static/media/Github.svg": "/static/media/Github.032a9ef3.svg",
     "static/media/Java.svg": "/static/media/Java.00d7cdd3.svg",
     "static/media/Javascript.svg": "/static/media/Javascript.dd60b11e.svg",
-    "static/media/LinkedIn.svg": "/static/media/LinkedIn.dd50c0f2.svg",
+    "static/media/LinkedIn.svg": "/static/media/LinkedIn.42e8edea.svg",
     "static/media/Phone.svg": "/static/media/Phone.17b348b4.svg",
     "static/media/Python.svg": "/static/media/Python.fbef321e.svg",
     "static/media/React.svg": "/static/media/React.aa112e2e.svg",
@@ -38,7 +38,7 @@
     "static/js/runtime-main.cc04dae6.js",
     "static/css/2.64a99b10.chunk.css",
     "static/js/2.1e4a32b4.chunk.js",
-    "static/css/main.8578348e.chunk.css",
-    "static/js/main.35b188c8.chunk.js"
+    "static/css/main.b94ff8bf.chunk.css",
+    "static/js/main.bdfe3156.chunk.js"
   ]
 }
