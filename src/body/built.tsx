@@ -1,5 +1,4 @@
 import React from 'react';
-//import 'bootstrap/dist/css/bootstrap.css';
 import {
     Card,
     Container,
@@ -32,14 +31,12 @@ export class Built extends React.Component {
 
         return (
             <div className="lrgCard" id="Built" style={built}>
-                <Card.Header style={built} as={"h6"}>
-                    <Container>
-                        <Row id="card-title-p">
-                            <img className="img-fluid" src={iconImage} style={gutter} width={40} color={"white"} alt={"about section"} />
-                            <div id="card-title">Built Using</div>
-                        </Row>
-                    </Container>
-                </Card.Header>
+                <Container className="title-bar">
+                    <Row id="card-title-p">
+                        <img className="img-fluid" src={iconImage} width={40} color={"white"} alt={"about section"} />
+                        <h2 id="card-title">Built Using</h2>
+                    </Row>
+                </Container>
 
                 <Card.Body>
                         <Container>

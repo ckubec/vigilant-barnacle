@@ -20,10 +20,12 @@ export class Contact extends React.Component {
         return (
             <div className="lrgCard" id="Contact">
                 <Container className="title-bar" id="titleBar">
-                    <Row id="card-title-p" >
+                    <div>
+                    <Row id="card-title-p">
                         <img className="img-fluid" src={iconImage} width={40} color={"white"} alt={"contact section"}/>
                         <h2 id={"card-title"} >Contact</h2>
                     </Row>
+                    </div>
                 </Container>
 
                 <Container className="body">

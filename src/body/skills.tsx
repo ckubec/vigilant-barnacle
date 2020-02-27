@@ -2,6 +2,7 @@ import React from 'react';
 import {Card, Container, Row, Col} from "react-bootstrap";
 import skillImage from "../img/skills-icon.svg";
 import './card.scss';
+import './skills.scss';
 
 
 export class Skills extends React.Component {

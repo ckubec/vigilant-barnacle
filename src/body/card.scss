@@ -17,18 +17,16 @@ $colors: (
     .row {
       margin: auto;
       flex-wrap: nowrap;
-      //background-color: red;
-      //border-bottom: solid darkgray;
+      justify-content: center;
+      border-bottom: solid darkgray;
 
       img.img-fluid {
-        //background-color: gray;
         height: 100%;
-        margin-right: 0.5rem;
+        margin-right: 1rem;
       }
 
       h2#card-title {
 
-        //background-color: aqua;
       }
     }
   }
