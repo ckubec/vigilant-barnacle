@@ -1,7 +1,7 @@
 import React from 'react';
 import {AccordionCollapse, AccordionToggle, Button, Card, Container, Row} from "react-bootstrap";
-import aboutImage from "../img/about-icon.svg";
-import './card.scss';
+import aboutImage from "../img/icons/about-icon.svg";
+import './style/card.scss';
 
 
 export class About extends React.Component {
@@ -15,7 +15,7 @@ export class About extends React.Component {
                     </Row>
                 </Container>
 
-                <Card.Body>
+                <div className="container-fluid">
                     <Card.Text>
                         Hello, my name is Chris, a Full Stack Software Engineer. I am located in Seattle, Washington.
                         This site is still under construction, please come back soon! This site is optimized for mobile first. <i>Posted - 2/25/20</i>
@@ -40,8 +40,8 @@ export class About extends React.Component {
                         </p>
                     </Card.Text>
                     </AccordionCollapse>
-                    <AccordionToggle as={Button} variant="link" eventKey="open">more</AccordionToggle>
-                </Card.Body>
+                    <AccordionToggle as={Button} variant="link" eventKey="open"><a>close</a><a>more</a></AccordionToggle>
+                </div>
             </div>
         );
     }

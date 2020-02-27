@@ -1,9 +1,9 @@
 import React from 'react';
 //import 'bootstrap/dist/css/bootstrap.css';
 import {Col, Container, Row} from "react-bootstrap";
-import iconImage from "../img/contact-icon.svg";
-import './card.scss';
-import './contact.scss';
+import iconImage from "../img/icons/contact-icon.svg";
+import './style/card.scss';
+import './style/contact.scss';
 
 let links = [
     {name:"LinkedIn", href:"https://www.linkedin.com/in/chriskubec/"},

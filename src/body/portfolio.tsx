@@ -1,8 +1,8 @@
 import React from 'react';
-import './card.scss';
+import './style/card.scss';
 import {Container, Row} from "react-bootstrap";
-import portfolioImage from "../img/portfolio.svg";
-import './portfolio.scss';
+import portfolioImage from "../img/icons/portfolio.svg";
+import './style/portfolio.scss';
 
 
 export class Portfolio extends React.Component {

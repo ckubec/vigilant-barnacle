@@ -5,7 +5,6 @@ $colors: (
         primaryborder: midnightblue,
 );
 
-
 //Title of each section
 .lrgCard {
   color: map_get($colors, primarytext);
@@ -32,6 +31,21 @@ $colors: (
   }
 }
 
+div.container-fluid {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+  @media (min-width: 800px ) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  @media (max-width: 570px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 
 //Refactor to own file
 .mr-3 {

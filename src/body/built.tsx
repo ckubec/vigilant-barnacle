@@ -4,18 +4,12 @@ import {
     Container,
     Row
 } from "react-bootstrap";
-import './card.scss';
-import iconImage from "../img/built-icon.svg";
+import './style/card.scss';
+import iconImage from "../img/icons/built-icon.svg";
 
 
 export class Built extends React.Component {
     render() {
-        const gutter = {
-            marginRight: "0.5rem",
-            maxWidth: "40px",
-            maxHeight: "40px"
-        };
-
         const card = {
             backgroundColor:"black",
             fontSize: ".75rem",
