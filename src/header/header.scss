@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 a {
   border-radius: 8px;
-  /*border: 3px solid midnightblue;*/
 }
 
 .sticky-top {
@@ -12,7 +12,8 @@ a {
 }
 
 .navbar-light {
-  font-family: Dosis, sans-serif;
+  //font-family: Dosis, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -47,10 +48,11 @@ a.title {
 }
 
 .navbar-light .navbar-nav .nav-link {
+  border: 3px solid transparent;
   color: #ffffff;
   background-color: transparent;
   padding: .5em 1.5em .5em;
-  font-size: 24px;
+  //font-size: 24px;
   /*margin-right: .5em;*/
 }
 

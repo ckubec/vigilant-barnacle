@@ -18,21 +18,23 @@ export class Contact extends React.Component {
         let linkdivs = links.map(item => link(item.name, item.href));
 
         return (
-            <div className="lrgCard" id="Contact">
-                <Container className="title-bar" id="titleBar">
-                    <div>
-                    <Row id="card-title-p">
-                        <img className="img-fluid" src={iconImage} width={40} color={"white"} alt={"contact section"}/>
-                        <h2 id={"card-title"} >Contact</h2>
-                    </Row>
-                    </div>
-                </Container>
+            <div className="background" id="Contact">
+                <div className="lrgCard">
+                    <Container className="title-bar" id="titleBar">
+                        <div>
+                        <Row id="card-title-p">
+                            <img className="img-fluid" src={iconImage} width={40} color={"white"} alt={"contact section"}/>
+                            <h2 id={"card-title"} >Contact</h2>
+                        </Row>
+                        </div>
+                    </Container>
 
-                <Container className="body">
-                    <Row className="justify-content-center">
-                        {linkdivs}
-                    </Row>
-                </Container>
+                    <Container className="body">
+                        <Row className="justify-content-center">
+                            {linkdivs}
+                        </Row>
+                    </Container>
+                </div>
             </div>
         );
     }

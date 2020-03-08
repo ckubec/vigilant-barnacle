@@ -8,16 +8,18 @@ import './style/skills.scss';
 export class Skills extends React.Component {
     render() {
         return(
-        <div className="lrgCard" id="Skills">
-            <Container className="title-bar">
-                <Row id="card-title-p" >
-                    <img className="img-fluid" src={skillImage} width={40} color={"white"} alt={"skills section"} />
-                    <h2 id="card-title">Skills</h2>
-                </Row>
-            </Container>
+        <div className="background" id="Skills">
+            <div className="lrgCard">
+                <Container className="title-bar">
+                    <Row id="card-title-p" >
+                        <img className="img-fluid" src={skillImage} width={40} color={"white"} alt={"skills section"} />
+                        <h2 id="card-title">Skills</h2>
+                    </Row>
+                </Container>
 
-            <div className="container-fluid">
-                {getSkills()}
+                <div className="container-fluid">
+                    {getSkills()}
+                </div>
             </div>
         </div>
         );
@@ -39,7 +41,7 @@ function getSkills() {
 
 const cardStyle ={
     marginBottom: "0px",
-    backgroundColor: "black",
+    //backgroundColor: "black",
 };
 
 const listStyle = {

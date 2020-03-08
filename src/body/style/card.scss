@@ -1,31 +1,41 @@
 $colors: (
         primarybackground: black,
-        secondarybackground: gray,
+        secondarybackground: #191919,
         primarytext: white,
         primaryborder: midnightblue,
 );
 
 //Title of each section
-.lrgCard {
-  color: map_get($colors, primarytext);
+.background {
+  font-family: 'Montserrat', sans-serif;
+  background-color: map_get($colors, primarybackground);
+  padding: 10px;
+  .lrgCard {
+    color: map_get($colors, primarytext);
+    offset-after: 85px;
+    background-color: map_get($colors, secondarybackground);
+    padding: .5rem;
+    border-radius: 1rem;
 
-  div.title-bar.container {
-    text-align: center;
-    padding: 10px;
+    div.title-bar.container {
+      text-align: center;
 
-    .row {
-      margin: auto;
-      flex-wrap: nowrap;
-      justify-content: center;
-      border-bottom: solid darkgray;
+      .row {
+        margin: auto;
+        flex-wrap: nowrap;
+        padding: .5rem;
+        //justify-content: center;
+        border-bottom: solid darkgray;
 
-      img.img-fluid {
-        height: 100%;
-        margin-right: 1rem;
-      }
+        img.img-fluid {
+          height: 100%;
+          margin-right: .5rem;
+        }
 
-      h2#card-title {
+        h2#card-title {
+          font-weight: bolder;
 
+        }
       }
     }
   }
@@ -34,21 +44,12 @@ $colors: (
 div.container-fluid {
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 5rem;
-  padding-right: 5rem;
-
-  @media (min-width: 800px ) {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  @media (max-width: 570px) {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 //Refactor to own file
-.mr-3 {
+img.mr-3 {
   max-width: 80px;
   max-height: 40px;
   margin: 0px 0px 0px 1rem;

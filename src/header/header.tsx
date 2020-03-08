@@ -6,6 +6,7 @@ import NavbarCollapse from "react-bootstrap/NavbarCollapse";
 import NavbarToggle from "react-bootstrap/NavbarToggle";
 import {BannerCanvas} from "./banner";
 
+
 // TODO Add backend most likely express to retain data.
 let tabs = ["Chris Kubec", "About", "Skills", "Portfolio", "Contact" /*, "Archive"*/];
 
