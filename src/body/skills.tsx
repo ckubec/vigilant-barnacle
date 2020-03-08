@@ -12,7 +12,7 @@ export class Skills extends React.Component {
             <div className="lrgCard">
                 <Container className="title-bar">
                     <Row id="card-title-p" >
-                        <img className="img-fluid" src={skillImage} width={40} color={"white"} alt={"skills section"} />
+                        <img className="img-fluid" src={skillImage} width={40} alt={"skills section"} />
                         <h2 id="card-title">Skills</h2>
                     </Row>
                 </Container>
@@ -27,7 +27,7 @@ export class Skills extends React.Component {
 
 }
 
-let skillsTree = [ "React", "Python", "Javascript", "Typescript", "Java" /*, "C++", "C"/*, "Jenkins"*/];
+let skillsTree = [ "React", "JavaScript", "Typescript", "HTML 5", "CSS 3", "Redux", "SASS", "GitHub", "Java" , "C Sharp", "C++", "C", "Python", "Android"];
 
 function getSkills() {
     let built = skillsTree.map(skill => skillBuild(skill));
@@ -46,18 +46,21 @@ const cardStyle ={
 
 const listStyle = {
     textAlign: "center" as 'center',
-    color: "white",
     marginBottom: "0px",
     overflow: "hidden",
     textOverflow: "hidden",
     whiteSpace: "nowrap" as 'nowrap',
-    fontSize: "1rem"
+    fontSize: ".75rem"
 };
+
+const back = {
+    backgroundColor: "black",
+}
 
 function skillBuild(skill: string) {
     return (
-        <Col xs={6} sm={4} md={3} key={skill} style={cardStyle}>
-            <Card>
+        <Col xs={4} sm={4} md={2} key={skill} style={cardStyle}>
+            <Card className="img-back">
                 <Card.Img className="d-flex"  src={require("../img/skills/"+ skill +".svg")} alt="Card image" />
             </Card>
 

@@ -29,6 +29,7 @@ $colors: (
 
         img.img-fluid {
           height: 100%;
+          background-color: map_get($colors, secondarybackground);
           margin-right: .5rem;
         }
 
@@ -39,6 +40,11 @@ $colors: (
       }
     }
   }
+}
+
+div.img-back {
+  background-color: map_get($colors, secondarybackground);
+  border: unset;
 }
 
 div.container-fluid {
