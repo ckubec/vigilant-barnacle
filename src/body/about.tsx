@@ -42,7 +42,7 @@ export class About extends React.Component {
                             This site is still under construction, please come back soon! This site is optimized for mobile first. <i>Posted - 3/7/20</i>
                         </Card.Text>
                         <AccordionCollapse eventKey="open">
-                        <Card.Text>
+                        <div>
                             <p>
                                 I graduated from the University of Washington in August 2016. I started my career at GE Healthcare where,
                                 under the mentorship of a great Software Architect, I grew into the role of DevOps engineer. During my time at
@@ -59,7 +59,7 @@ export class About extends React.Component {
                                 realized Full Stack/Front End is where I would rather be. After helping Tableau Software migrate off
                                 Python 2.7 the project wrapped successfully.
                             </p>
-                        </Card.Text>
+                        </div>
                         </AccordionCollapse>
                         <AccordionToggle as={Button} variant="link" eventKey="open" onClick={this.expanded}>
                             <p className="bottom-p" hidden={!this.state.expandedBlock} >Close</p>

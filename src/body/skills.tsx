@@ -3,11 +3,11 @@ import {Card, Container, Row, Col} from "react-bootstrap";
 import skillImage from "../img/icons/skills-icon.svg";
 import './style/card.scss';
 import './style/skills.scss';
+import {Iconmanager} from "../img/skills/iconmanager";
 
 
-export class Skills extends React.Component {
-    render() {
-        return(
+export function Skills() {
+    return(
         <div className="background" id="Skills">
             <div className="lrgCard">
                 <Container className="title-bar">
@@ -22,15 +22,13 @@ export class Skills extends React.Component {
                 </div>
             </div>
         </div>
-        );
-    }
-
+    );
 }
 
 let skillsTree = [ "React", "JavaScript", "Typescript", "HTML 5", "CSS 3", "Redux", "SASS", "GitHub", "Java" , "C Sharp", "C++", "C", "Python", "Android"];
 
 function getSkills() {
-    let built = skillsTree.map(skill => skillBuild(skill));
+    let built = skillsTree.map(skill => SkillBuild(skill));
 
     return (
         <Row className="deck" >
@@ -41,7 +39,6 @@ function getSkills() {
 
 const cardStyle ={
     marginBottom: "0px",
-    //backgroundColor: "black",
 };
 
 const listStyle = {
@@ -53,18 +50,14 @@ const listStyle = {
     fontSize: ".75rem"
 };
 
-const back = {
-    backgroundColor: "black",
-}
-
-function skillBuild(skill: string) {
+function SkillBuild(skill: string) {
     return (
         <Col xs={4} sm={4} md={2} key={skill} style={cardStyle}>
             <Card className="img-back">
-                <Card.Img className="d-flex"  src={require("../img/skills/"+ skill +".svg")} alt="Card image" />
+                {Iconmanager(skill)}
             </Card>
 
-            <Card.Text style={listStyle} color={"white"} >
+            <Card.Text style={listStyle} >
             {skill}
             </Card.Text>
         </Col>
