@@ -29,7 +29,7 @@ export function Header () {
                 <NavbarCollapse id="responsive-navbar-nav" >
                     <Nav className="justify-content-center mr-auto">{items}</Nav>
                 </NavbarCollapse>
-                <Nav.Link key={"light"} onClick={() => dispatch(lightModeSwap())}>Light Switch</Nav.Link>
+                <Nav.Link key={"light"} onClick={() => dispatch(lightModeSwap())}>Light Switch Placeholder</Nav.Link>
             </Navbar>
         </>
     );

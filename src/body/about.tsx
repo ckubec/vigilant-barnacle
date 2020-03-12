@@ -18,11 +18,7 @@ export class About extends React.Component {
     }
 
     expanded() {
-        if (this.state.expandedBlock) {
-            this.setState({expandedBlock: false});
-        } else {
-            this.setState({expandedBlock: true});
-        }
+        (this.state.expandedBlock) ? this.setState({expandedBlock: false}) : this.setState({expandedBlock: true});
     }
 
     render() {

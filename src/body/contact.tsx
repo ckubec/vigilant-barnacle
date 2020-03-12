@@ -1,5 +1,4 @@
 import React from 'react';
-//import 'bootstrap/dist/css/bootstrap.css';
 import {Col, Container, Row} from "react-bootstrap";
 import iconImage from "../img/icons/contact-icon.svg";
 import './style/card.scss';

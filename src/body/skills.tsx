@@ -3,7 +3,7 @@ import {Card, Container, Row, Col} from "react-bootstrap";
 import skillImage from "../img/icons/skills-icon.svg";
 import './style/card.scss';
 import './style/skills.scss';
-import {Iconmanager} from "../img/skills/iconmanager";
+import {IconManager} from "../img/skills/iconmanager";
 
 
 export function Skills() {
@@ -54,7 +54,7 @@ function SkillBuild(skill: string) {
     return (
         <Col xs={4} sm={4} md={2} key={skill} style={cardStyle}>
             <Card className="img-back">
-                {Iconmanager(skill)}
+                {IconManager(skill)}
             </Card>
 
             <Card.Text style={listStyle} >

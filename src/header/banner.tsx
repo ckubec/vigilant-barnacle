@@ -51,7 +51,6 @@ export class BannerCanvas extends React.Component {
             <Stage id="bannerstage" width={document.body.clientWidth} height={400} style={canvasstyle} key={"BannerStage"} >
                 <Layer id="bannerlayer">
                     {this.grid.map(grid => grid.draw())}
-                    {/*<Text fontSize={20} x={this.windowwidth/2} y={400/2} text={"Chris Kubec"} fill={"transparent"} className="title" fillEnabled={true} ></Text>*/}
                 </Layer>
             </Stage>
         );

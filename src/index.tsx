@@ -7,5 +7,4 @@ import {store} from "./app/store";
 ReactDOM.render(
     <Provider store={store}>
         <App key="app" />
-    </Provider>
-    , document.getElementById("app"));
+    </Provider>, document.getElementById("app"));

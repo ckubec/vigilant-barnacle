@@ -11,7 +11,6 @@ import iconImage from "../img/icons/built-icon.svg";
 export class Built extends React.Component {
     render() {
         const card = {
-            //backgroundColor:"black",
             fontSize: ".75rem",
             textAlign: "center" as 'center'
         };
@@ -40,6 +39,10 @@ export class Built extends React.Component {
                                     <div className={"col"} style={card}>
                                         <img className={"mr-3"} src={require("../img/skills/ReactBootstrap.svg")} alt={"ReactBootstrapImage"}/>
                                         <div>Bootstrap</div>
+                                    </div>
+                                    <div className={"col"} style={card}>
+                                        <img className={"mr-3"} src={require("../img/skills/Redux.svg")} alt={"ReduxImage"}/>
+                                        <div>Redux</div>
                                     </div>
                                 </Row>
                             </Container>
