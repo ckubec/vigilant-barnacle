@@ -1,8 +1,8 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
-import iconImage from "../img/icons/contact-icon.svg";
 import './style/card.scss';
 import './style/contact.scss';
+import {LargeIcons, SectionIcons} from "../features/iconmanager";
 
 let links = [
     {name:"LinkedIn", href:"https://www.linkedin.com/in/chriskubec/"},
@@ -12,38 +12,36 @@ let links = [
     {name:"Github", href:"https://github.com/ckubec"},
 ];
 
-export class Contact extends React.Component {
-    render() {
-        let linkdivs = links.map(item => link(item.name, item.href));
+export function Contact (){
+    let linkdivs = links.map(item => link(item.name, item.href));
 
-        return (
-            <div className="background" id="Contact">
-                <div className="lrgCard">
-                    <Container className="title-bar" id="titleBar">
-                        <div>
-                        <Row id="card-title-p">
-                            <img className="img-fluid" src={iconImage} width={40} color={"white"} alt={"contact section"}/>
-                            <h2 id={"card-title"} >Contact</h2>
-                        </Row>
-                        </div>
-                    </Container>
+    return (
+        <div className="background" id="Contact">
+            <div className="lrgCard">
+                <Container className="title-bar" id="titleBar">
+                    <div>
+                    <Row id="card-title-p">
+                        {SectionIcons("Contact")}
+                        <h2 id={"card-title"} >Contact</h2>
+                    </Row>
+                    </div>
+                </Container>
 
-                    <Container className="body">
-                        <Row className="justify-content-center">
-                            {linkdivs}
-                        </Row>
-                    </Container>
-                </div>
+                <Container className="body">
+                    <Row className="justify-content-center">
+                        {linkdivs}
+                    </Row>
+                </Container>
             </div>
-        );
-    }
+        </div>
+    );
 }
 
 function link(key: string, href: string) {
     return(
         <Col xs={4} sm={2} key={key+"link"}>
             <a href={href}>
-                <img src={require("../img/contact/" + key + ".svg")} alt={key}/>
+                {LargeIcons(key)}
                 <h6>{key}</h6>
             </a>
         </Col>
