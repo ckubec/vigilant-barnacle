@@ -1,18 +1,6 @@
-$colors: (
-        primarybackground: black,
-        secondarybackground: gray,
-        primarytext: white,
-        primaryborder: midnightblue,
-);
-
-@function color($colorname) {
-  @return map_get($colors, $colorname);
-}
-
 //Contact Div Body
 div.body.container {
   div {
-    //background-color: color(primarybackground);
     padding: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -27,7 +15,6 @@ div.body.container {
         }
         //Link Label
         h6 {
-          color: color(primarytext);
           text-align: center;
         }
       }

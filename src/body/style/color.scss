@@ -1,0 +1,119 @@
+///////////////
+// Color Palettes
+///////////////
+$colors: (
+        primarybackground: #7c9cbc,
+        secondarybackground: white,
+        primarytext: black,
+);
+
+$darkcolors: (
+        primarybackground:  #121212,
+        secondarybackground: #191919,
+        primarytext: white,
+);
+
+@function color($colorname) {
+  @return map_get($colors, $colorname);
+}
+
+@function darkcolor($colorname) {
+  @return map_get($darkcolors, $colorname);
+}
+
+///////////////
+//BODY Color
+///////////////
+
+//Title of each section
+.dark {
+  .accordion {
+    .background {
+      background-color: darkcolor(primarybackground);
+      .lrgCard {
+        color: darkcolor(primarytext);
+        background-color: darkcolor(secondarybackground);
+        svg {
+          fill: darkcolor(primarytext);
+        }
+      }
+    }
+  }
+}
+
+.light {
+  .accordion {
+    .background {
+      background-color: color(primarybackground);
+      .lrgCard {
+        color: color(primarytext);
+        background-color: color(secondarybackground);
+        svg {
+          fill: color(primarytext);
+        }
+      }
+    }
+  }
+}
+
+.dark {
+  h6 {
+    color: darkcolor(primarytext);
+  }
+}
+.light {
+  h6 {
+    color: color(primarytext);
+  }
+}
+
+///////////////
+//NavBar Items
+///////////////
+nav.navbar.navbar-expand-md.navbar-dark.sticky-top {
+  background: darkcolor(secondarybackground);
+
+  button.menuToggle {
+    color: darkcolor(primarytext);
+    //border-color: transparent;
+  }
+
+  .navbar-toggler {
+    color: darkcolor(primarytext);
+  }
+
+  a.title {
+    color: darkcolor(primarytext);
+    background-color:  darkcolor(primarybackground);
+  }
+
+  .navbar-nav .nav-link {
+    border: 3px solid transparent;
+    color: darkcolor(primarytext);
+    background-color: transparent;
+  }
+}
+
+nav.navbar.navbar-expand-md.navbar-light.sticky-top {
+  background: color(secondarybackground);
+
+  button.menuToggle {
+    color: color(primarytext);
+    //border-color: transparent;
+  }
+
+  .navbar-toggler {
+    color: color(primarytext);
+  }
+
+  a.title {
+    color: color(primarytext);
+    background-color:  color(primarybackground);
+  }
+
+  .navbar-nav .nav-link {
+    border: 3px solid transparent;
+    color: color(primarytext);
+    background-color: transparent;
+  }
+}

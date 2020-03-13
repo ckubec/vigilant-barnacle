@@ -1,14 +1,14 @@
 import React from 'react';
 import {AccordionCollapse, AccordionToggle, Button, Card, Container, Row} from "react-bootstrap";
-import './style/card.scss';
 import {SectionIcons} from "../features/iconmanager";
 import {useDispatch, useSelector} from "react-redux";
-import {expandedAbout, selectAboutExpand} from "../features/stateSlice";
+import {expandedAbout, selectAboutExpand, selectLight} from "../features/stateSlice";
 
 
 export function About () {
     const dispatch = useDispatch();
     const expand = useSelector(selectAboutExpand);
+    const light = useSelector(selectLight);
 
     return (
         <div className="background" id="About">
@@ -45,7 +45,7 @@ export function About () {
                         </p>
                     </div>
                     </AccordionCollapse>
-                    <AccordionToggle as={Button} variant={"dark"} eventKey="open" onClick={() => dispatch(expandedAbout())}>
+                    <AccordionToggle as={Button} variant={light ? "dark" : "light"} eventKey="open" onClick={() => dispatch(expandedAbout())}>
                             <p className="bottom-p" hidden={!expand} >Close</p>
                             <p className="bottom-p" hidden={expand} >More</p>
                     </AccordionToggle>

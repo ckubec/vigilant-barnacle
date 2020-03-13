@@ -1,6 +1,5 @@
 import React from 'react';
 import {Card, Container, Row, Col} from "react-bootstrap";
-import './style/card.scss';
 import './style/skills.scss';
 import {SectionIcons, SmallIcons} from "../features/iconmanager";
 

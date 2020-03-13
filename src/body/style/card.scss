@@ -1,20 +1,11 @@
-$colors: (
-        primarybackground: black,
-        secondarybackground: #191919,
-        primarytext: white,
-        primaryborder: midnightblue,
-);
-
+@import "color";
 
 //Title of each section
 .background {
   font-family: 'Montserrat', sans-serif;
-  background-color: map_get($colors, primarybackground);
   padding: 10px;
   .lrgCard {
-    color: map_get($colors, primarytext);
     offset-after: 85px;
-    background-color: map_get($colors, secondarybackground);
     padding: .5rem;
     border-radius: 1rem;
 
@@ -27,15 +18,8 @@ $colors: (
         padding: .5rem;
         border-bottom: solid darkgray;
 
-        img.img-fluid {
-          height: 100%;
-          //background-color: map_get($colors, secondarybackground);
-          margin-right: .5rem;
-        }
-
         svg {
           height: 100%;
-          //background-color: map_get($colors, secondarybackground);
           margin-right: .5rem;
         }
 
@@ -49,7 +33,7 @@ $colors: (
 }
 
 div.img-back {
-  background-color: map_get($colors, secondarybackground);
+  background-color: transparent;
   border: unset;
 }
 

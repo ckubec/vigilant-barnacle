@@ -1,37 +1,32 @@
-//@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import "../body/style/color";
 
 a {
   border-radius: 8px;
 }
 
 .sticky-top {
-  border-bottom: 3px solid black;
-  background: #191919;
+  //border-bottom: 3px solid black;
   justify-content: center;
 }
 
-.navbar-light {
-  //font-family: Dosis, sans-serif;
+nav.navbar.navbar-expand-md {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
 button.menuToggle {
   justify-content: center;
-  color: white;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-color: transparent;
   border-style: hidden;
 }
 
 a.title {
   position: absolute;
   top: -225px;
-  color: white;
-  background-color: black;
   font-size: 2rem;
+
   @media (min-width: 900px) {
     font-size: 3rem;
     top: -250px;
@@ -43,17 +38,12 @@ a.title {
   mix-blend-mode: normal;
 }
 
-.navbar-light .navbar-toggler {
-  color: white;
+.navbar-nav .nav-link {
+  padding: .5em 1.5em .5em;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  border: 3px solid transparent;
-  color: #ffffff;
-  background-color: transparent;
-  padding: .5em 1.5em .5em;
-  //font-size: 24px;
-  /*margin-right: .5em;*/
+#lighttoggle:hover {
+  animation: unset;
 }
 
 a.nav-link:hover {

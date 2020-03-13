@@ -1,6 +1,5 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
-import './style/card.scss';
 import './style/contact.scss';
 import {LargeIcons, SectionIcons} from "../features/iconmanager";
 

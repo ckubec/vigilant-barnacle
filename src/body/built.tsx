@@ -4,7 +4,6 @@ import {
     Container,
     Row
 } from "react-bootstrap";
-import './style/card.scss';
 import {SectionIcons, SmallIcons} from "../features/iconmanager";
 
 
@@ -28,19 +27,19 @@ export function Built (){
                 <Card.Body>
                         <Container>
                             <Row>
-                                <div className={"col"} style={card}>
+                                <div className={"col-3"} style={card}>
                                     {SmallIcons("React", className)}
                                     <div>React</div>
                                 </div>
-                                <div className={"col"} style={card}>
+                                <div className={"col-3"} style={card}>
                                     {SmallIcons("Typescript", className)}
                                     <div>Typescript</div>
                                 </div>
-                                <div className={"col"} style={card}>
+                                <div className={"col-3"} style={card}>
                                     {SmallIcons("Bootstrap", className)}
                                     <div>Bootstrap</div>
                                 </div>
-                                <div className={"col"} style={card}>
+                                <div className={"col-3"} style={card}>
                                     {SmallIcons("Redux", className)}
                                     <div>Redux</div>
                                 </div>
