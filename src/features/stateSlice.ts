@@ -20,7 +20,7 @@ export const slice = createSlice({
         },
         expandedAbout: state => {
             state.aboutExpand = (state.aboutExpand) ? false : true;
-        }
+        },
     }
 
 });
@@ -29,5 +29,6 @@ export const { lightModeSwap, expandedAbout } = slice.actions;
 
 export const selectLight = (state: RootState) => state.app.lightMode;
 export const selectAboutExpand = (state: RootState) => state.app.aboutExpand;
+
 
 export default slice.reducer;

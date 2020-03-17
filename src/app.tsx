@@ -5,7 +5,7 @@ import {Body} from "./body/body";
 const bodystyle = {
     position: 'relative' as 'relative',
     overflowY: "scroll" as 'scroll',
-    backgroundColor: "black"
+    //backgroundColor: "white"
 };
 
 class App extends React.Component {

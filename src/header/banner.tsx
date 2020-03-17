@@ -1,7 +1,6 @@
 import React from 'react';
 import {Stage, Layer, RegularPolygon } from 'react-konva';
-import {useSelector} from "react-redux";
-import {selectLight} from "../features/stateSlice";
+
 
 //TODO Optimization and repaint fix rather then current implementation, organize Hexes into 2D Array
 // and during resize keep array the same and only add/drop the cutoff or added Hexes.
@@ -10,7 +9,6 @@ export class BannerCanvas extends React.Component {
     windowwidth = document.body.clientWidth;
     grid: Hexagon[] = [];
     interval: any;
-    backgroundColor = "black";
 
     constructor(props:any) {
         super(props);
@@ -26,9 +24,9 @@ export class BannerCanvas extends React.Component {
         for (let z = 0; z < this.windowheight; z += offset) {
             for (let x = 0; x <= this.windowwidth + offsety; x+=offsety) {
                 if ((z/offset) % 2 === 0) {
-                    this.grid.push( new Hexagon((x+1)*(z+1), x, z, size, this.backgroundColor));
+                    this.grid.push( new Hexagon((x+1)*(z+1), x, z, size, "transparent"));
                 } else {
-                    this.grid.push( new Hexagon((x+1)*(z+1), x - offsety/2, z, size, this.backgroundColor));
+                    this.grid.push( new Hexagon((x+1)*(z+1), x - offsety/2, z, size, "transparent"));
                 }
             }
         }
@@ -47,7 +45,6 @@ export class BannerCanvas extends React.Component {
     render() {
         //TODO Extract to style sheet if more styles start popping up in this component.
         const canvasstyle = {
-            //backgroundColor: "white",
             display: "flex"
         };
 
@@ -73,7 +70,7 @@ export class BannerCanvas extends React.Component {
     //TODO tweak animation to create similar effect to the buttons in Nav.
     tick() {
         this.grid[Math.floor(Math.random()*(this.grid.length))].setColor(this.grid[0].randColor());
-        this.grid[Math.floor(Math.random()*(this.grid.length))].setColor("rgba(0,0,0,alp".replace("alp", "1"));
+        this.grid[Math.floor(Math.random()*(this.grid.length))].setColor("transparent");
 
         this.forceUpdate();
     }

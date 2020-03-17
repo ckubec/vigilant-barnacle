@@ -1,6 +1,4 @@
 import React from 'react';
-import {useSelector} from "react-redux";
-import {selectLight} from "./stateSlice";
 
 //Enums for Small icon image paths
 enum smallImageStore {
@@ -32,7 +30,6 @@ enum largeImageStore {
 }
 
 export function SmallIcons (icon:string, name?:string){
-    const mode = useSelector(selectLight);
     return (
         <svg className={name ? name : "icon"} viewBox={"0 0 24 24"} xmlns="http://www.w3.org/2000/svg" >
             {getSmallImage(icon)}
@@ -47,7 +44,6 @@ function getSmallImage(theIcon:string) {
 }
 
 export function LargeIcons (icon:string, name?:string) {
-    const mode = useSelector(selectLight);
     return (
         <svg className={name ? name : "icon"} viewBox={"0 0 512 512"} xmlns="http://www.w3.org/2000/svg" >
             {getLrgImage(icon)}
@@ -62,7 +58,6 @@ function getLrgImage(theIcon:string) {
 }
 
 export function SectionIcons (theIcon:string) {
-    const mode = useSelector(selectLight);
     let height = "40px", width = "40px";
     if(theIcon === "About") {
         return (
