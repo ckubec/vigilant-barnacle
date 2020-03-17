@@ -11,7 +11,7 @@ export function Skills() {
                 <Container className="title-bar">
                     <Row id="card-title-p" >
                         {SectionIcons("Skills")}
-                        <h2 id="card-title">Skills</h2>
+                        <h1 id="card-title">Skills</h1>
                     </Row>
                 </Container>
 
@@ -42,7 +42,7 @@ const listStyle = {
 
 function SkillBuild(skill: string) {
     return (
-        <Col xs={4} sm={4} md={2} key={skill}>
+        <Col xs={4} sm={3} md={2} key={skill}>
             <Card className="img-back">
                 {SmallIcons(skill)}
             </Card>

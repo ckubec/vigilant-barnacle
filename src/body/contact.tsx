@@ -21,7 +21,7 @@ export function Contact (){
                     <div>
                     <Row id="card-title-p">
                         {SectionIcons("Contact")}
-                        <h2 id={"card-title"} >Contact</h2>
+                        <h1 id={"card-title"} >Contact</h1>
                     </Row>
                     </div>
                 </Container>

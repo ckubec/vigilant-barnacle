@@ -16,7 +16,7 @@ export function About () {
                 <Container className="title-bar">
                     <Row id="card-title-p">
                         {SectionIcons("About")}
-                        <h2 id="card-title">About Me</h2>
+                        <h1 id="card-title">About Me</h1>
                     </Row>
                 </Container>
 

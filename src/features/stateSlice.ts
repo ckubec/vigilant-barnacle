@@ -22,7 +22,6 @@ export const slice = createSlice({
             state.aboutExpand = (state.aboutExpand) ? false : true;
         },
     }
-
 });
 
 export const { lightModeSwap, expandedAbout } = slice.actions;

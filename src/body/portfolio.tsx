@@ -11,7 +11,7 @@ export function Portfolio () {
                 <Container className="title-bar">
                     <Row id="card-title-p" >
                         {SectionIcons("Portfolio")}
-                        <h2 id="card-title">Portfolio</h2>
+                        <h1 id="card-title">Portfolio</h1>
                     </Row>
                 </Container>
 
